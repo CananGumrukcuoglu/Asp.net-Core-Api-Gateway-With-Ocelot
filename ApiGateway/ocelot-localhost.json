@@ -1,0 +1,93 @@
+{
+  "ReRoutes": [
+    {
+      "DownstreamPathTemplate": "/api/{catchAll}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5001
+        }
+      ],
+      "UpstreamPathTemplate": "/authentication-service/api/{catchAll}",
+      "UpstreamHeaderTransform": {
+        "X-Forwarded-For": "{RemoteIpAddress}"
+      },
+      "QoSOptions": {
+        "TimeoutValue": 300000,
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/{catchAll}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5002
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "UpstreamPathTemplate": "/product-service/api/{catchAll}",
+      "UpstreamHeaderTransform": {
+        "X-Forwarded-For": "{RemoteIpAddress}"
+      },
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking":3,
+        "DurationOfBreak":1000,
+        "TimeoutValue":5000
+      },
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "PeriodTimespan": 1,
+        "Limit": 1
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/{catchAll}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5003
+        },
+        {
+          "Host": "localhost",
+          "Port": 5013
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "UpstreamPathTemplate": "/customer-service/api/{catchAll}",
+      "UpstreamHeaderTransform": {
+        "X-Forwarded-For": "{RemoteIpAddress}"
+      },
+      "QoSOptions": {
+        "TimeoutValue":10000,
+        "ExceptionsAllowedBeforeBreaking":3,
+        "DurationOfBreak":1000
+      },
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      }
+    }
+  ],
+   "GlobalConfiguration": {
+     "BaseUrl": "http://localhost:5000/",
+     "RequestIdKey": "OcRequestId",
+     "AdministrationPath": "/administration",
+     "RateLimitOptions": {
+       "DisableRateLimitHeaders": false,
+       "QuotaExceededMessage": "That's enough dude!",
+       "HttpStatusCode": 444
+     }
+   }
+}

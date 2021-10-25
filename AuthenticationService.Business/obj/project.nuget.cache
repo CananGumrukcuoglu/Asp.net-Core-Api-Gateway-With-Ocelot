@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "dgSpecHash": "NTBQKizJLtX9OW1NOLVaMyMm8hXW3sxHgH8om9Pcop0iAdnCttQR8a1wfKGUT8A99+LT4Mnoat2WxtKWA2Y0dA==",
+  "success": true,
+  "projectFilePath": "/home/canan/projects/Asp.net-Core-Api-Gateway-With-Ocelot/AuthenticationService.Business/AuthenticationService.Business.csproj",
+  "expectedPackageFiles": [
+    "/home/canan/.nuget/packages/automapper/10.1.1/automapper.10.1.1.nupkg.sha512",
+    "/home/canan/.nuget/packages/microsoft.aspnetcore.http.abstractions/2.2.0/microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
+    "/home/canan/.nuget/packages/microsoft.aspnetcore.http.features/2.2.0/microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
+    "/home/canan/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
+    "/home/canan/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/5.0.0/microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "/home/canan/.nuget/packages/microsoft.extensions.logging.abstractions/5.0.0/microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
+    "/home/canan/.nuget/packages/microsoft.extensions.options/5.0.0/microsoft.extensions.options.5.0.0.nupkg.sha512",
+    "/home/canan/.nuget/packages/microsoft.extensions.primitives/5.0.0/microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "/home/canan/.nuget/packages/microsoft.identitymodel.jsonwebtokens/6.13.1/microsoft.identitymodel.jsonwebtokens.6.13.1.nupkg.sha512",
+    "/home/canan/.nuget/packages/microsoft.identitymodel.logging/6.13.1/microsoft.identitymodel.logging.6.13.1.nupkg.sha512",
+    "/home/canan/.nuget/packages/microsoft.identitymodel.tokens/6.13.1/microsoft.identitymodel.tokens.6.13.1.nupkg.sha512",
+    "/home/canan/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512",
+    "/home/canan/.nuget/packages/system.identitymodel.tokens.jwt/6.13.1/system.identitymodel.tokens.jwt.6.13.1.nupkg.sha512",
+    "/home/canan/.nuget/packages/system.reflection.emit/4.7.0/system.reflection.emit.4.7.0.nupkg.sha512",
+    "/home/canan/.nuget/packages/system.security.cryptography.cng/4.5.0/system.security.cryptography.cng.4.5.0.nupkg.sha512",
+    "/home/canan/.nuget/packages/system.text.encodings.web/4.5.0/system.text.encodings.web.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

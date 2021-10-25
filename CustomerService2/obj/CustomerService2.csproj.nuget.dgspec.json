@@ -1,0 +1,214 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/canan/projects/Asp.net-Core-Api-Gateway-With-Ocelot/CustomerService2/CustomerService2.csproj": {}
+  },
+  "projects": {
+    "/home/canan/projects/Asp.net-Core-Api-Gateway-With-Ocelot/CustomerService2/CustomerService2.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/canan/projects/Asp.net-Core-Api-Gateway-With-Ocelot/CustomerService2/CustomerService2.csproj",
+        "projectName": "CustomerService2",
+        "projectPath": "/home/canan/projects/Asp.net-Core-Api-Gateway-With-Ocelot/CustomerService2/CustomerService2.csproj",
+        "packagesPath": "/home/canan/.nuget/packages/",
+        "outputPath": "/home/canan/projects/Asp.net-Core-Api-Gateway-With-Ocelot/CustomerService2/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/canan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/home/canan/projects/Asp.net-Core-Api-Gateway-With-Ocelot/Services.Middleware/Services.Middleware.csproj": {
+                "projectPath": "/home/canan/projects/Asp.net-Core-Api-Gateway-With-Ocelot/Services.Middleware/Services.Middleware.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.20, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[5.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.407/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/canan/projects/Asp.net-Core-Api-Gateway-With-Ocelot/Services.Common/Services.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/canan/projects/Asp.net-Core-Api-Gateway-With-Ocelot/Services.Common/Services.Common.csproj",
+        "projectName": "Services.Common",
+        "projectPath": "/home/canan/projects/Asp.net-Core-Api-Gateway-With-Ocelot/Services.Common/Services.Common.csproj",
+        "packagesPath": "/home/canan/.nuget/packages/",
+        "outputPath": "/home/canan/projects/Asp.net-Core-Api-Gateway-With-Ocelot/Services.Common/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/canan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.407/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/canan/projects/Asp.net-Core-Api-Gateway-With-Ocelot/Services.Middleware/Services.Middleware.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/canan/projects/Asp.net-Core-Api-Gateway-With-Ocelot/Services.Middleware/Services.Middleware.csproj",
+        "projectName": "Services.Middleware",
+        "projectPath": "/home/canan/projects/Asp.net-Core-Api-Gateway-With-Ocelot/Services.Middleware/Services.Middleware.csproj",
+        "packagesPath": "/home/canan/.nuget/packages/",
+        "outputPath": "/home/canan/projects/Asp.net-Core-Api-Gateway-With-Ocelot/Services.Middleware/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/canan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/home/canan/projects/Asp.net-Core-Api-Gateway-With-Ocelot/Services.Common/Services.Common.csproj": {
+                "projectPath": "/home/canan/projects/Asp.net-Core-Api-Gateway-With-Ocelot/Services.Common/Services.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "Serilog.Settings.Configuration": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            },
+            "Serilog.Sinks.Async": {
+              "target": "Package",
+              "version": "[1.5.0, )"
+            },
+            "Serilog.Sinks.File": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.407/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

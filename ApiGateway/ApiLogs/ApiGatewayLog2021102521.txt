@@ -1,0 +1,20 @@
+2021-10-25 21:56:33.045 +03:00 [INF] requestId: 0HMCNT4KO2HOA:00000001, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/{catchAll}
+2021-10-25 21:56:33.064 +03:00 [INF] requestId: 0HMCNT4KO2HOA:00000001, previousRequestId: no previous request id, message: No authentication needed for /authentication-service/api/authentication/get-token
+2021-10-25 21:56:33.067 +03:00 [INF] requestId: 0HMCNT4KO2HOA:00000001, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-25 21:56:33.142 +03:00 [WRN] requestId: 0HMCNT4KO2HOA:00000001, previousRequestId: no previous request id, message: Error Code: UnableToCompleteRequestError Message: Error making http request, exception: System.ArgumentException: The enumerable of policies to form the wrap must contain at least two policies. (Parameter 'policies')
+   at Polly.Policy.WrapAsync(IAsyncPolicy[] policies)
+   at Ocelot.Provider.Polly.PollyCircuitBreakingDelegatingHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Ocelot.Requester.HttpClientHttpRequester.GetResponse(HttpContext httpContext) errors found in ResponderMiddleware. Setting error response for request path:/authentication-service/api/authentication/get-token, request method: GET
+2021-10-25 21:56:33.155 +03:00 [ERR] HTTP GET /authentication-service/api/authentication/get-token?user=devnot responded 500 in 164.7075 ms. RequestId: 6c475d85-e7ed-4850-981e-b8371d872a99 Request Body http localhost:5000/authentication-service/api/authentication/get-token ?user=devnot  and Response 500: . Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-25 21:57:17.672 +03:00 [INF] requestId: 0HMCNT4KO2HOA:00000002, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/{catchAll}
+2021-10-25 21:57:17.672 +03:00 [INF] requestId: 0HMCNT4KO2HOA:00000002, previousRequestId: no previous request id, message: No authentication needed for /authentication-service/api/authentication/get-token
+2021-10-25 21:57:17.672 +03:00 [INF] requestId: 0HMCNT4KO2HOA:00000002, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-25 21:57:17.674 +03:00 [WRN] requestId: 0HMCNT4KO2HOA:00000002, previousRequestId: no previous request id, message: Error Code: UnableToCompleteRequestError Message: Error making http request, exception: System.ArgumentException: The enumerable of policies to form the wrap must contain at least two policies. (Parameter 'policies')
+   at Polly.Policy.WrapAsync(IAsyncPolicy[] policies)
+   at Ocelot.Provider.Polly.PollyCircuitBreakingDelegatingHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Ocelot.Requester.HttpClientHttpRequester.GetResponse(HttpContext httpContext) errors found in ResponderMiddleware. Setting error response for request path:/authentication-service/api/authentication/get-token, request method: GET
+2021-10-25 21:57:17.674 +03:00 [ERR] HTTP GET /authentication-service/api/authentication/get-token?user=devnot responded 500 in 28.2102 ms. RequestId: 6e2b52bf-7613-4a57-bfb6-7a366b460e20 Request Body http localhost:5000/authentication-service/api/authentication/get-token ?user=devnot  and Response 500: . Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-25 21:59:32.235 +03:00 [INF] requestId: 0HMCNT4KO2HOA:00000003, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/{catchAll}
+2021-10-25 21:59:32.235 +03:00 [INF] requestId: 0HMCNT4KO2HOA:00000003, previousRequestId: no previous request id, message: No authentication needed for /authentication-service/api/authentication/get-t

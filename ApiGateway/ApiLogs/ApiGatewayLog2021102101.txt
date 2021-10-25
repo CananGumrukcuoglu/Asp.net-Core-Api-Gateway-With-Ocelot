@@ -1,0 +1,505 @@
+2021-10-21 01:05:47.010 +03:00 [INF] requestId: 0HMCK2KRLUOCB:00000001, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/{catchAll}
+2021-10-21 01:05:47.038 +03:00 [INF] requestId: 0HMCK2KRLUOCB:00000001, previousRequestId: no previous request id, message: /product-service/api/product/list is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-21 01:05:47.410 +03:00 [INF] requestId: 0HMCK2KRLUOCB:00000001, previousRequestId: no previous request id, message: Client has been authenticated for /product-service/api/product/list
+2021-10-21 01:05:47.412 +03:00 [INF] requestId: 0HMCK2KRLUOCB:00000001, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-21 01:05:47.413 +03:00 [INF] requestId: 0HMCK2KRLUOCB:00000001, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+2021-10-21 01:05:47.413 +03:00 [INF] requestId: 0HMCK2KRLUOCB:00000001, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-21 01:05:47.438 +03:00 [WRN] requestId: 0HMCK2KRLUOCB:00000001, previousRequestId: no previous request id, message: ReRoute Ocelot.Values.UpstreamPathTemplate specifies use QoS but no QosHandler found in DI container. Will use not use a QosHandler, please check your setup!
+2021-10-21 01:05:47.553 +03:00 [WRN] requestId: 0HMCK2KRLUOCB:00000001, previousRequestId: no previous request id, message: Error Code: ConnectionToDownstreamServiceError Message: Error connecting to downstream service, exception: System.Net.Http.HttpRequestException: Connection refused
+ ---> System.Net.Sockets.SocketException (111): Connection refused
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Ocelot.Requester.HttpClientHttpRequester.GetResponse(HttpContext httpContext) errors found in ResponderMiddleware. Setting error response for request path:/product-service/api/product/list, request method: GET
+2021-10-21 01:05:47.569 +03:00 [ERR] HTTP GET /product-service/api/product/list responded 502 in 601.9445 ms. RequestId: 78001a01-c31c-4d21-b04b-47c3db69e462 Request Body http localhost:5000/product-service/api/product/list   and Response 502: . Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:06:30.147 +03:00 [INF] requestId: 0HMCK2KRLUOCB:00000002, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/{catchAll}
+2021-10-21 01:06:30.147 +03:00 [INF] requestId: 0HMCK2KRLUOCB:00000002, previousRequestId: no previous request id, message: /customer-service/api/customer/customers is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-21 01:06:30.150 +03:00 [WRN] requestId: 0HMCK2KRLUOCB:00000002, previousRequestId: no previous request id, message: Client has NOT been authenticated for /customer-service/api/customer/customers and pipeline error set. Request for authenticated route /customer-service/api/customer/customers by  was unauthenticated
+2021-10-21 01:06:30.150 +03:00 [WRN] requestId: 0HMCK2KRLUOCB:00000002, previousRequestId: no previous request id, message: Error Code: UnauthenticatedError Message: Request for authenticated route /customer-service/api/customer/customers by  was unauthenticated errors found in ResponderMiddleware. Setting error response for request path:/customer-service/api/customer/customers, request method: GET
+2021-10-21 01:06:30.150 +03:00 [WRN] HTTP GET /customer-service/api/customer/customers responded 401 in 27.2460 ms. RequestId: 967fdc51-c248-4a91-9c2b-454d62e0ab99 Request Body http localhost:5000/customer-service/api/customer/customers   and Response 401: . Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:06:46.288 +03:00 [INF] requestId: 0HMCK2KRLUOCB:00000003, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/{catchAll}
+2021-10-21 01:06:46.288 +03:00 [INF] requestId: 0HMCK2KRLUOCB:00000003, previousRequestId: no previous request id, message: /customer-service/api/customer/customers is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-21 01:06:46.290 +03:00 [INF] requestId: 0HMCK2KRLUOCB:00000003, previousRequestId: no previous request id, message: Client has been authenticated for /customer-service/api/customer/customers
+2021-10-21 01:06:46.290 +03:00 [INF] requestId: 0HMCK2KRLUOCB:00000003, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-21 01:06:46.290 +03:00 [INF] requestId: 0HMCK2KRLUOCB:00000003, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+2021-10-21 01:06:46.290 +03:00 [INF] requestId: 0HMCK2KRLUOCB:00000003, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-21 01:06:46.294 +03:00 [WRN] requestId: 0HMCK2KRLUOCB:00000003, previousRequestId: no previous request id, message: ReRoute Ocelot.Values.UpstreamPathTemplate specifies use QoS but no QosHandler found in DI container. Will use not use a QosHandler, please check your setup!
+2021-10-21 01:06:46.501 +03:00 [INF] requestId: 0HMCK2KRLUOCB:00000003, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5003/api/customer/customers
+2021-10-21 01:06:46.510 +03:00 [INF] HTTP GET /customer-service/api/customer/customers responded 200 in 222.9378 ms. RequestId: 75e5f3c4-ff5a-4d95-90b8-5464f429c490 Request Body http localhost:5000/customer-service/api/customer/customers   and Response 200: [{"customerId":1,"name":"Customer-1"},{"customerId":2,"name":"Customer-2"}]. Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:06:49.826 +03:00 [INF] requestId: 0HMCK2KRLUOCB:00000004, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/{catchAll}
+2021-10-21 01:06:49.826 +03:00 [INF] requestId: 0HMCK2KRLUOCB:00000004, previousRequestId: no previous request id, message: /customer-service/api/customer/customers is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-21 01:06:49.826 +03:00 [INF] requestId: 0HMCK2KRLUOCB:00000004, previousRequestId: no previous request id, message: Client has been authenticated for /customer-service/api/customer/customers
+2021-10-21 01:06:49.826 +03:00 [INF] requestId: 0HMCK2KRLUOCB:00000004, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-21 01:06:49.826 +03:00 [INF] requestId: 0HMCK2KRLUOCB:00000004, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+2021-10-21 01:06:49.826 +03:00 [INF] requestId: 0HMCK2KRLUOCB:00000004, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-21 01:06:50.030 +03:00 [INF] requestId: 0HMCK2KRLUOCB:00000004, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5013/api/customer/customers
+2021-10-21 01:06:50.030 +03:00 [INF] HTTP GET /customer-service/api/customer/customers responded 200 in 205.3352 ms. RequestId: 3e5fe8c6-01bd-4452-ad49-5ebe91c15d06 Request Body http localhost:5000/customer-service/api/customer/customers   and Response 200: [{"customerId":100,"name":"Customer-100"},{"customerId":101,"name":"Customer-101"},{"customerId":102,"name":"Customer-102"},{"customerId":103,"name":"Customer-103"},{"customerId":104,"name":"Customer-104"}]. Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:06:51.086 +03:00 [INF] requestId: 0HMCK2KRLUOCB:00000005, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/{catchAll}
+2021-10-21 01:06:51.086 +03:00 [INF] requestId: 0HMCK2KRLUOCB:00000005, previousRequestId: no previous request id, message: /customer-service/api/customer/customers is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-21 01:06:51.087 +03:00 [INF] requestId: 0HMCK2KRLUOCB:00000005, previousRequestId: no previous request id, message: Client has been authenticated for /customer-service/api/customer/customers
+2021-10-21 01:06:51.087 +03:00 [INF] requestId: 0HMCK2KRLUOCB:00000005, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-21 01:06:51.087 +03:00 [INF] requestId: 0HMCK2KRLUOCB:00000005, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+2021-10-21 01:06:51.087 +03:00 [INF] requestId: 0HMCK2KRLUOCB:00000005, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-21 01:06:51.111 +03:00 [INF] requestId: 0HMCK2KRLUOCB:00000005, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5003/api/customer/customers
+2021-10-21 01:06:51.111 +03:00 [INF] HTTP GET /customer-service/api/customer/customers responded 200 in 25.2230 ms. RequestId: 04acf519-f00d-453a-b5e7-eea4768ffd9e Request Body http localhost:5000/customer-service/api/customer/customers   and Response 200: [{"customerId":1,"name":"Customer-1"},{"customerId":2,"name":"Customer-2"}]. Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:06:52.055 +03:00 [INF] requestId: 0HMCK2KRLUOCB:00000006, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/{catchAll}
+2021-10-21 01:06:52.055 +03:00 [INF] requestId: 0HMCK2KRLUOCB:00000006, previousRequestId: no previous request id, message: /customer-service/api/customer/customers is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-21 01:06:52.056 +03:00 [INF] requestId: 0HMCK2KRLUOCB:00000006, previousRequestId: no previous request id, message: Client has been authenticated for /customer-service/api/customer/customers
+2021-10-21 01:06:52.056 +03:00 [INF] requestId: 0HMCK2KRLUOCB:00000006, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-21 01:06:52.056 +03:00 [INF] requestId: 0HMCK2KRLUOCB:00000006, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+2021-10-21 01:06:52.056 +03:00 [INF] requestId: 0HMCK2KRLUOCB:00000006, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-21 01:06:52.080 +03:00 [INF] requestId: 0HMCK2KRLUOCB:00000006, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5013/api/customer/customers
+2021-10-21 01:06:52.080 +03:00 [INF] HTTP GET /customer-service/api/customer/customers responded 200 in 25.8873 ms. RequestId: 82ab0f18-d930-44f9-b063-7a94dd3252b6 Request Body http localhost:5000/customer-service/api/customer/customers   and Response 200: [{"customerId":100,"name":"Customer-100"},{"customerId":101,"name":"Customer-101"},{"customerId":102,"name":"Customer-102"},{"customerId":103,"name":"Customer-103"},{"customerId":104,"name":"Customer-104"}]. Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:06:52.917 +03:00 [INF] requestId: 0HMCK2KRLUOCB:00000007, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/{catchAll}
+2021-10-21 01:06:52.917 +03:00 [INF] requestId: 0HMCK2KRLUOCB:00000007, previousRequestId: no previous request id, message: /customer-service/api/customer/customers is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-21 01:06:52.917 +03:00 [INF] requestId: 0HMCK2KRLUOCB:00000007, previousRequestId: no previous request id, message: Client has been authenticated for /customer-service/api/customer/customers
+2021-10-21 01:06:52.917 +03:00 [INF] requestId: 0HMCK2KRLUOCB:00000007, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-21 01:06:52.917 +03:00 [INF] requestId: 0HMCK2KRLUOCB:00000007, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+2021-10-21 01:06:52.917 +03:00 [INF] requestId: 0HMCK2KRLUOCB:00000007, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-21 01:06:52.961 +03:00 [INF] requestId: 0HMCK2KRLUOCB:00000007, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5003/api/customer/customers
+2021-10-21 01:06:53.073 +03:00 [INF] HTTP GET /customer-service/api/customer/customers responded 200 in 156.2936 ms. RequestId: 789d2e17-bb17-4f6a-a9ff-28dc0aa22549 Request Body http localhost:5000/customer-service/api/customer/customers   and Response 200: [{"customerId":1,"name":"Customer-1"},{"customerId":2,"name":"Customer-2"}]. Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:06:53.853 +03:00 [INF] requestId: 0HMCK2KRLUOCB:00000008, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/{catchAll}
+2021-10-21 01:06:53.853 +03:00 [INF] requestId: 0HMCK2KRLUOCB:00000008, previousRequestId: no previous request id, message: /customer-service/api/customer/customers is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-21 01:06:53.854 +03:00 [INF] requestId: 0HMCK2KRLUOCB:00000008, previousRequestId: no previous request id, message: Client has been authenticated for /customer-service/api/customer/customers
+2021-10-21 01:06:53.854 +03:00 [INF] requestId: 0HMCK2KRLUOCB:00000008, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-21 01:06:53.854 +03:00 [INF] requestId: 0HMCK2KRLUOCB:00000008, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+2021-10-21 01:06:53.854 +03:00 [INF] requestId: 0HMCK2KRLUOCB:00000008, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-21 01:06:53.863 +03:00 [INF] requestId: 0HMCK2KRLUOCB:00000008, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5013/api/customer/customers
+2021-10-21 01:06:53.863 +03:00 [INF] HTTP GET /customer-service/api/customer/customers responded 200 in 10.4769 ms. RequestId: afcde473-13b6-462a-a494-4a01fc45df70 Request Body http localhost:5000/customer-service/api/customer/customers   and Response 200: [{"customerId":100,"name":"Customer-100"},{"customerId":101,"name":"Customer-101"},{"customerId":102,"name":"Customer-102"},{"customerId":103,"name":"Customer-103"},{"customerId":104,"name":"Customer-104"}]. Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:06:54.695 +03:00 [INF] requestId: 0HMCK2KRLUOCB:00000009, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/{catchAll}
+2021-10-21 01:06:54.695 +03:00 [INF] requestId: 0HMCK2KRL2021-10-21 01:11:18.098 +03:00 [INF] requestId: 0HMCK2PPQDB6C:00000001, previousRequestId: no previous request id, message: /product-service/api/product/list is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-21 01:11:18.326 +03:00 [INF] requestId: 0HMCK2PPQDB6C:00000001, previousRequestId: no previous request id, message: Client has been authenticated for /product-service/api/product/list
+2021-10-21 01:11:18.328 +03:00 [INF] requestId: 0HMCK2PPQDB6C:00000001, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-21 01:11:18.329 +03:00 [INF] requestId: 0HMCK2PPQDB6C:00000001, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+2021-10-21 01:11:18.329 +03:00 [INF] requestId: 0HMCK2PPQDB6C:00000001, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-21 01:11:18.354 +03:00 [WRN] requestId: 0HMCK2PPQDB6C:00000001, previousRequestId: no previous request id, message: ReRoute Ocelot.Values.UpstreamPathTemplate specifies use QoS but no QosHandler found in DI container. Will use not use a QosHandler, please check your setup!
+2021-10-21 01:11:18.565 +03:00 [INF] requestId: 0HMCK2PPQDB6C:00000001, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5002/api/product/list
+2021-10-21 01:11:18.589 +03:00 [INF] HTTP GET /product-service/api/product/list responded 200 in 562.0973 ms. RequestId: 633058dc-4787-4da3-962c-3190875bc948 Request Body http localhost:5000/product-service/api/product/list   and Response 200: [{"productId":1,"name":"Product-1"},{"productId":2,"name":"Product-2"}]. Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:11:19.601 +03:00 [INF] requestId: 0HMCK2PPQDB6C:00000002, previousRequestId: no previous request id, message: /product-service/api/product/list is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-21 01:11:19.606 +03:00 [INF] requestId: 0HMCK2PPQDB6C:00000002, previousRequestId: no previous request id, message: Client has been authenticated for /product-service/api/product/list
+2021-10-21 01:11:19.606 +03:00 [INF] requestId: 0HMCK2PPQDB6C:00000002, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-21 01:11:19.606 +03:00 [INF] requestId: 0HMCK2PPQDB6C:00000002, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+2021-10-21 01:11:19.606 +03:00 [INF] requestId: 0HMCK2PPQDB6C:00000002, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-21 01:11:19.629 +03:00 [INF] requestId: 0HMCK2PPQDB6C:00000002, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5002/api/product/list
+2021-10-21 01:11:19.630 +03:00 [INF] HTTP GET /product-service/api/product/list responded 200 in 32.5662 ms. RequestId: 8ed2b79e-598a-4451-931b-1f4ba2ccb7ef Request Body http localhost:5000/product-service/api/product/list   and Response 200: [{"productId":1,"name":"Product-1"},{"productId":2,"name":"Product-2"}]. Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:11:20.106 +03:00 [INF] requestId: 0HMCK2PPQDB6C:00000003, previousRequestId: no previous request id, message: Request get:/product-service/api/product/list from ClientId client has been blocked, quota 1/1s exceeded by 2. Blocked by rule /product-service/api/{catchAll}, TraceIdentifier 0HMCK2Q55G71C.
+2021-10-21 01:11:20.107 +03:00 [WRN] requestId: 0HMCK2PPQDB6C:00000003, previousRequestId: no previous request id, message: Error Code: QuotaExceededError Message: API calls quota exceeded! maximum admitted 1 per 1s. errors found in ResponderMiddleware. Setting error response for request path:/product-service/api/product/list, request method: GET
+2021-10-21 01:11:20.133 +03:00 [WRN] HTTP GET /product-service/api/product/list responded 429 in 7.0779 ms. RequestId: 92cecc91-7c0e-44c3-aaa9-4da36a2b075e Request Body http localhost:5000/product-service/api/product/list   and Response 429: API calls quota exceeded! maximum admitted 1 per 1s.. Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:11:20.406 +03:00 [INF] requestId: 0HMCK2PPQDB6C:00000004, previousRequestId: no previous request id, message: Request get:/product-service/api/product/list from ClientId client has been blocked, quota 1/1s exceeded by 3. Blocked by rule /product-service/api/{catchAll}, TraceIdentifier 0HMCK2Q55G71D.
+2021-10-21 01:11:20.407 +03:00 [WRN] requestId: 0HMCK2PPQDB6C:00000004, previousRequestId: no previous request id, message: Error Code: QuotaExceededError Message: API calls quota exceeded! maximum admitted 1 per 1s. errors found in ResponderMiddleware. Setting error response for request path:/product-service/api/product/list, request method: GET
+2021-10-21 01:11:20.407 +03:00 [WRN] HTTP GET /product-service/api/product/list responded 429 in 1.1894 ms. RequestId: 9358fc73-c42d-4d9b-bf5f-8e059293c2b9 Request Body http localhost:5000/product-service/api/product/list   and Response 429: API calls quota exceeded! maximum admitted 1 per 1s.. Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:11:37.459 +03:00 [INF] requestId: 0HMCK2PPQDB6C:00000005, previousRequestId: no previous request id, message: /product-service/api/product/list is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-21 01:11:37.463 +03:00 [INF] requestId: 0HMCK2PPQDB6C:00000005, previousRequestId: no previous request id, message: Client has been authenticated for /product-service/api/product/list
+2021-10-21 01:11:37.463 +03:00 [INF] requestId: 0HMCK2PPQDB6C:00000005, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-21 01:11:37.463 +03:00 [INF] requestId: 0HMCK2PPQDB6C:00000005, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+2021-10-21 01:11:37.464 +03:00 [INF] requestId: 0HMCK2PPQDB6C:00000005, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-21 01:11:37.489 +03:00 [INF] requestId: 0HMCK2PPQDB6C:00000005, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5002/api/product/list
+2021-10-21 01:11:37.688 +03:00 [INF] HTTP GET /product-service/api/product/list responded 200 in 229.6591 ms. RequestId: 3ed49087-918c-429b-b6be-21e669b2159f Request Body http localhost:5000/product-service/api/product/list   and Response 200: [{"productId":1,"name":"Product-1"},{"productId":2,"name":"Product-2"}]. Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:11:37.962 +03:00 [INF] requestId: 0HMCK2PPQDB6C:00000006, previousRequestId: no previous request id, message: Request get:/product-service/api/product/list from ClientId client has been blocked, quota 1/1s exceeded by 2. Blocked by rule /product-service/api/{catchAll}, TraceIdentifier 0HMCK2Q55G71F.
+2021-10-21 01:11:37.962 +03:00 [WRN] requestId: 0HMCK2PPQDB6C:00000006, previousRequestId: no previous request id, message: Error Code: QuotaExceededError Message: API calls quota exceeded! maximum admitted 1 per 1s. errors found in ResponderMiddleware. Setting error response for request path:/product-service/api/product/list, request method: GET
+2021-10-21 01:11:37.962 +03:00 [WRN] HTTP GET /product-service/api/product/list responded 429 in 1.0954 ms. RequestId: a8925b52-6350-40f8-a308-f491b03cfdf8 Request Body http localhost:5000/product-service/api/product/list   and Response 429: API calls quota exceeded! maximum admitted 1 per 1s.. Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:11:38.444 +03:00 [INF] requestId: 0HMCK2PPQDB6C:00000007, previousRequestId: no previous request id, message: Request get:/product-service/api/product/list from ClientId client has been blocked, quota 1/1s exceeded by 3. Blocked by rule /product-service/api/{catchAll}, TraceIdentifier 0HMCK2Q55G71G.
+2021-10-21 01:11:38.444 +03:00 [WRN] requestId: 0HMCK2PPQDB6C:00000007, previousRequestId: no previous request id, message: Error Code: QuotaExceededError Message: API calls quota exceeded! maximum admitted 1 per 1s. errors found in ResponderMiddleware. Setting error response for request path:/product-service/api/product/list, request method: GET
+2021-10-21 01:11:38.445 +03:00 [WRN] HTTP GET /product-service/api/product/list responded 429 in 0.7520 ms. RequestId: 98d7e7d7-18b1-4fbc-a619-2ceb08aa94be Request Body http localhost:5000/product-service/api/product/list   and Response 429: API calls quota exceeded! maximum admitted 1 per 1s.. Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:11:39.278 +03:00 [INF] requestId: 0HMCK2PPQDB6C:00000008, previousRequestId: no previous request id, message: /product-service/api/product/list is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-21 01:11:39.279 +03:00 [INF] requestId: 0HMCK2PPQDB6C:00000008, previousRequestId: no previous request id, message: Client has been authenticated for /product-service/api/product/list
+2021-10-21 01:11:39.279 +03:00 [INF] requestId: 0HMCK2PPQDB6C:00000008, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-21 01:11:39.279 +03:00 [INF] requestId: 0HMCK2PPQDB6C:00000008, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+2021-10-21 01:11:39.279 +03:00 [INF] requestId: 0HMCK2PPQDB6C:00000008, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-21 01:11:39.304 +03:00 [INF] requestId: 0HMCK2PPQDB6C:00000008, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5002/api/product/list
+2021-10-21 01:11:39.448 +03:00 [INF] HTTP GET /product-service/api/product/list responded 200 in 169.9262 ms. RequestId: ec701c3a-ccc8-43bf-9b01-d9547785a9ff Request Body http localhost:5000/product-service/api/product/list   and Response 200: [{"productId":1,"name":"Product-1"},{"productId":2,"name":"Product-2"}]. Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:11:40.597 +03:00 [INF] requestId: 0HMCK2PPQDB6C:00000009, previousRequestId: no previous request id, message: /product-service/api/product/list is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-21 01:11:40.598 +03:00 [INF] requestId: 0HMCK2PPQDB6C:00000009, previousRequestId: no previous request id, message: Client has been authenticated for /product-service/api/product/list
+2021-10-21 01:11:40.598 +03:00 [INF] requestId: 0HMCK2PPQDB6C:00000009, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-21 01:11:40.598 +03:00 [INF] requestId: 0HMCK2PPQDB6C:00000009, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+2021-10-21 01:11:40.598 +03:00 [INF] requestId: 0HMCK2PPQDB6C:00000009, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-21 01:11:40.652 +03:00 [INF] requestId: 0HMCK2PPQDB6C:00000009, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5002/api/product/list
+2021-10-21 01:11:40.783 +03:00 [INF] HTTP GET /product-service/api/product/list responded 200 in 186.1285 ms. RequestId: 7fadb524-3d7c-424c-8cd2-84931d82fc95 Request Body http localhost:5000/product-service/api/product/list   and Response 200: [{"productId":1,"name":"Product-1"},{"productId":2,"name":"Product-2"}]. Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:11:41.750 +03:00 [INF] requestId: 0HMCK2PPQDB6C:0000000A, previousRequestId: no previous request id, message: /product-service/api/product/list is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-21 01:11:41.750 +03:00 [INF] requestId: 0HMCK2PPQDB6C:0000000A, previousRequestId: no previous request id, message: Client has been authenticated for /product-service/api/product/list
+2021-10-21 01:11:41.750 +03:00 [INF] requestId: 0HMCK2PPQDB6C:0000000A, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-21 01:11:41.750 +03:00 [INF] requestId: 0HMCK2PPQDB6C:0000000A, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+2021-10-21 01:11:41.750 +03:00 [INF] requestId: 0HMCK2PPQDB6C:0000000A, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-21 01:11:41.754 +03:00 [INF] requestId: 0HMCK2PPQDB6C:0000000A, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5002/api/product/list
+2021-10-21 01:11:41.922 +03:00 [INF] HTTP GET /product-service/api/product/list responded 200 in 172.5151 ms. RequestId: a1ba9e6e-a3db-40cf-9235-ba9f609f2efa Request Body http localhost:5000/product-service/api/product/list   and Response 200: [{"productId":1,"name":"Product-1"},{"productId":2,"name":"Product-2"}]. Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:11:42.635 +03:00 [INF] requestId: 0HMCK2PPQDB6C:0000000B, previousRequestId: no previous request id, message: Request get:/product-service/api/product/list from ClientId client has been blocked, quota 1/1s exceeded by 2. Blocked by rule /product-service/api/{catchAll}, TraceIdentifier 0HMCK2Q55G71K.
+2021-10-21 01:11:42.635 +03:00 [WRN] requestId: 0HMCK2PPQDB6C:0000000B, previousRequestId: no previous request id, message: Error Code: QuotaExceededError Message: API calls quota exceeded! maximum admitted 1 per 1s. errors found in ResponderMiddleware. Setting error response for request path:/product-service/api/product/list, request method: GET
+2021-10-21 01:11:42.635 +03:00 [WRN] HTTP GET /product-service/api/product/list responded 429 in 1.0429 ms. RequestId: bbe80e12-bdd4-4ebf-a77f-77161a559103 Request Body http localhost:5000/product-service/api/product/list   and Response 429: API calls quota exceeded! maximum admitted 1 per 1s.. Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:11:43.050 +03:00 [INF] requestId: 0HMCK2PPQDB6C:0000000C, previousRequestId: no previous request id, message: /product-service/api/product/list is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-21 01:11:43.051 +03:00 [INF] requestId: 0HMCK2PPQDB6C:0000000C, previousRequestId: no previous request id, message: Client has been authenticated for /product-service/api/product/list
+2021-10-21 01:11:43.051 +03:00 [INF] requestId: 0HMCK2PPQDB6C:0000000C, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-21 01:11:43.051 +03:00 [INF] requestId: 0HMCK2PPQDB6C:0000000C, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+2021-10-21 01:11:43.051 +03:00 [INF] requestId: 0HMCK2PPQDB6C:0000000C, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-21 01:11:43.074 +03:00 [INF] requestId: 0HMCK2PPQDB6C:0000000C, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5002/api/product/list
+2021-10-21 01:11:43.223 +03:00 [INF] HTTP GET /product-service/api/product/list responded 200 in 173.2050 ms. RequestId: 824dad37-c006-46c5-8f2b-9075f00339a7 Request Body http localhost:5000/product-service/api/product/list   and Response 200: [{"productId":1,"name":"Product-1"},{"productId":2,"name":"Product-2"}]. Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:11:44.143 +03:00 [INF] requestId: 0HMCK2PPQDB6C:0000000D, previousRequestId: no previous request id, message: /product-service/api/product/list is an authenticat2021-10-21 01:28:30.719 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000001, previousRequestId: no previous request id, message: /product-service/api/product/list is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-21 01:28:30.963 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000001, previousRequestId: no previous request id, message: Client has been authenticated for /product-service/api/product/list
+2021-10-21 01:28:30.965 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000001, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-21 01:28:30.965 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000001, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+2021-10-21 01:28:30.966 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000001, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-21 01:28:30.989 +03:00 [WRN] requestId: 0HMCK33OS3ESH:00000001, previousRequestId: no previous request id, message: ReRoute Ocelot.Values.UpstreamPathTemplate specifies use QoS but no QosHandler found in DI container. Will use not use a QosHandler, please check your setup!
+2021-10-21 01:28:31.043 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000001, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5002/api/product/list
+2021-10-21 01:28:31.066 +03:00 [INF] HTTP GET /product-service/api/product/list responded 200 in 420.1195 ms. RequestId: 546cb3a8-3151-4973-84b4-50a2ad652146 Request Body http localhost:5000/product-service/api/product/list   and Response 200: [{"productId":1,"name":"Product-1"},{"productId":2,"name":"Product-2"}]. Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:28:32.134 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000002, previousRequestId: no previous request id, message: /product-service/api/product/list is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-21 01:28:32.135 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000002, previousRequestId: no previous request id, message: Client has been authenticated for /product-service/api/product/list
+2021-10-21 01:28:32.135 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000002, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-21 01:28:32.135 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000002, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+2021-10-21 01:28:32.135 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000002, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-21 01:28:32.153 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000002, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5002/api/product/list
+2021-10-21 01:28:32.179 +03:00 [INF] HTTP GET /product-service/api/product/list responded 200 in 47.3733 ms. RequestId: a20e580e-40dd-4585-a0b8-a14d05d2faeb Request Body http localhost:5000/product-service/api/product/list   and Response 200: [{"productId":1,"name":"Product-1"},{"productId":2,"name":"Product-2"}]. Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:28:32.591 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000003, previousRequestId: no previous request id, message: /product-service/api/product/list is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-21 01:28:32.592 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000003, previousRequestId: no previous request id, message: Client has been authenticated for /product-service/api/product/list
+2021-10-21 01:28:32.592 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000003, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-21 01:28:32.592 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000003, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+2021-10-21 01:28:32.592 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000003, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-21 01:28:32.640 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000003, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5002/api/product/list
+2021-10-21 01:28:32.730 +03:00 [INF] HTTP GET /product-service/api/product/list responded 200 in 139.6965 ms. RequestId: 80839a53-2d5a-4b87-a8ac-0e154f1bd353 Request Body http localhost:5000/product-service/api/product/list   and Response 200: [{"productId":1,"name":"Product-1"},{"productId":2,"name":"Product-2"}]. Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:28:33.110 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000004, previousRequestId: no previous request id, message: /product-service/api/product/list is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-21 01:28:33.110 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000004, previousRequestId: no previous request id, message: Client has been authenticated for /product-service/api/product/list
+2021-10-21 01:28:33.110 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000004, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-21 01:28:33.110 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000004, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+2021-10-21 01:28:33.110 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000004, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-21 01:28:33.134 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000004, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5002/api/product/list
+2021-10-21 01:28:33.204 +03:00 [INF] HTTP GET /product-service/api/product/list responded 200 in 94.2265 ms. RequestId: 5f1f1a68-657f-4cf1-9c18-a9d07f12e4e4 Request Body http localhost:5000/product-service/api/product/list   and Response 200: [{"productId":1,"name":"Product-1"},{"productId":2,"name":"Product-2"}]. Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:28:34.156 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000005, previousRequestId: no previous request id, message: /product-service/api/product/list is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-21 01:28:34.156 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000005, previousRequestId: no previous request id, message: Client has been authenticated for /product-service/api/product/list
+2021-10-21 01:28:34.156 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000005, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-21 01:28:34.156 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000005, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+2021-10-21 01:28:34.156 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000005, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-21 01:28:34.184 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000005, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5002/api/product/list
+2021-10-21 01:28:34.361 +03:00 [INF] HTTP GET /product-service/api/product/list responded 200 in 205.8565 ms. RequestId: 4596d234-80b8-4989-8165-a1cdc5b9f06d Request Body http localhost:5000/product-service/api/product/list   and Response 200: [{"productId":1,"name":"Product-1"},{"productId":2,"name":"Product-2"}]. Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:28:34.609 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000006, previousRequestId: no previous request id, message: /product-service/api/product/list is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-21 01:28:34.610 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000006, previousRequestId: no previous request id, message: Client has been authenticated for /product-service/api/product/list
+2021-10-21 01:28:34.610 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000006, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-21 01:28:34.610 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000006, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+2021-10-21 01:28:34.610 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000006, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-21 01:28:34.612 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000006, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5002/api/product/list
+2021-10-21 01:28:34.761 +03:00 [INF] HTTP GET /product-service/api/product/list responded 200 in 152.2040 ms. RequestId: 6d9d73f3-67e2-4c86-80f8-6aa925ef5e33 Request Body http localhost:5000/product-service/api/product/list   and Response 200: [{"productId":1,"name":"Product-1"},{"productId":2,"name":"Product-2"}]. Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:28:35.110 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000007, previousRequestId: no previous request id, message: /product-service/api/product/list is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-21 01:28:35.110 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000007, previousRequestId: no previous request id, message: Client has been authenticated for /product-service/api/product/list
+2021-10-21 01:28:35.110 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000007, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-21 01:28:35.110 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000007, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+2021-10-21 01:28:35.110 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000007, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-21 01:28:35.119 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000007, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5002/api/product/list
+2021-10-21 01:28:35.225 +03:00 [INF] HTTP GET /product-service/api/product/list responded 200 in 116.3947 ms. RequestId: c2da4638-30f8-4beb-bf9c-375d4b6756e6 Request Body http localhost:5000/product-service/api/product/list   and Response 200: [{"productId":1,"name":"Product-1"},{"productId":2,"name":"Product-2"}]. Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:28:36.014 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000008, previousRequestId: no previous request id, message: /product-service/api/product/list is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-21 01:28:36.015 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000008, previousRequestId: no previous request id, message: Client has been authenticated for /product-service/api/product/list
+2021-10-21 01:28:36.015 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000008, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-21 01:28:36.015 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000008, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+2021-10-21 01:28:36.015 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000008, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-21 01:28:36.061 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000008, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5002/api/product/list
+2021-10-21 01:28:36.214 +03:00 [INF] HTTP GET /product-service/api/product/list responded 200 in 200.2647 ms. RequestId: bc8095f2-2185-4f56-bf93-94f46c6463b2 Request Body http localhost:5000/product-service/api/product/list   and Response 200: [{"productId":1,"name":"Product-1"},{"productId":2,"name":"Product-2"}]. Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:28:36.501 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000009, previousRequestId: no previous request id, message: /product-service/api/product/list is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-21 01:28:36.501 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000009, previousRequestId: no previous request id, message: Client has been authenticated for /product-service/api/product/list
+2021-10-21 01:28:36.501 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000009, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-21 01:28:36.501 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000009, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+2021-10-21 01:28:36.501 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000009, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-21 01:28:36.525 +03:00 [INF] requestId: 0HMCK33OS3ESH:00000009, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5002/api/product/list
+2021-10-21 01:28:36.659 +03:00 [INF] HTTP GET /product-service/api/product/list responded 200 in 158.2311 ms. RequestId: 8bfd8c8c-42e6-4415-b01e-43dd95d0611f Request Body http localhost:5000/product-service/api/product/list   and Response 200: [{"productId":1,"name":"Product-1"},{"productId":2,"name":"Product-2"}]. Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:28:37.563 +03:00 [INF] requestId: 0HMCK33OS3ESH:0000000A, previousRequestId: no previous request id, message: /product-service/api/product/list is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-21 01:28:37.563 +03:00 [INF] requestId: 0HMCK33OS3ESH:0000000A, previousRequestId: no previous request id, message: Client has been authenticated for /product-service/api/product/list
+2021-10-21 01:28:37.563 +03:00 [INF] requestId: 0HMCK33OS3ESH:0000000A, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-21 01:28:37.563 +03:00 [INF] requestId: 0HMCK33OS3ESH:0000000A, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+2021-10-21 01:28:37.563 +03:00 [INF] requestId: 0HMCK33OS3ESH:0000000A, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-21 01:28:37.585 +03:00 [INF] requestId: 0HMCK33OS3ESH:0000000A, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5002/api/product/list
+2021-10-21 01:28:37.634 +03:00 [INF] HTTP GET /product-service/api/product/list responded 200 in 72.3387 ms. RequestId: 700e018c-e5d4-4517-bca4-9501d25543a6 Request Body http localhost:5000/product-service/api/product/list   and Response 200: [{"productId":1,"name":"Product-1"},{"productId":2,"name":"Product-2"}]. Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:28:38.081 +03:00 [INF] requestId: 0HMCK33OS3ESH:0000000B, previousRequestId: no previous request id, message: /product-service/api/product/list is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-21 01:28:38.081 +03:00 [INF] requestId: 0HMCK33OS3ESH:0000000B, previousRequestId: no previous request id, message: Client has been authenticated for /product-service/api/product/list
+2021-10-21 01:28:38.081 +03:00 [INF] requestId: 0HMCK33OS3ESH:0000000B, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-21 01:28:38.081 +03:00 [INF] requestId: 0HMCK33OS3ESH:0000000B, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+2021-10-21 01:28:38.081 +03:00 [INF] requestId: 0HMCK33OS3ESH:0000000B, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-21 01:28:38.106 +03:00 [INF] requestId: 0HMCK33OS3ESH:0000000B, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5002/api/product/list
+2021-10-21 01:28:38.179 +03:00 [INF] HTTP GET /product-service/api/product/list responded 200 in 98.4182 ms. RequestId: a166f896-9ca8-4bed-a336-3eb7a86108b7 Request Body http localhost:5000/product-service/api/product/list   and Response 200: [{"productId":1,"name":"Product-1"},{"productId":2,"name":"Product-2"}]. Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:28:38.426 +03:00 [INF] requestId: 0HMCK33OS3ESH:0000000C, previousRequestId: no previous request id, message: /product-service/api/product/list is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-21 01:28:38.426 +03:00 [INF] requestId: 0HMCK33OS3ESH:0000000C, previousRequestId: no previous request id, message: Client has been authenticated for /product-service/api/product/list
+2021-10-21 01:28:38.427 +03:00 [INF] requestId: 0HMCK33OS3ESH:0000000C, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-21 01:28:38.427 +03:00 [INF] requestId: 0HMCK33OS3ESH:0000000C, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+2021-10-21 01:28:38.427 +03:00 [INF] requestId: 0HMCK33OS3ESH:0000000C, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-21 01:28:38.429 +03:00 [INF] requestId: 0HMCK33OS3ESH:0000000C, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5002/api/product/list
+2021-10-21 01:28:38.481 +03:00 [INF] HTTP GET /product-service/api/product/list responded 200 in 55.1699 ms. RequestId: a57b3837-e6d5-45c0-a1c3-c1d9d5645167 Request Body http localhost:5000/product-service/api/product/list   and Response 200: [{"productId":1,"name":"Product-1"},{"productId":2,"name":"Product-2"}]. Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:28:39.642 +03:00 [INF] requestId: 0HMCK33OS3ESH:0000000D, previousRequestId: no previous request id, message: /product-service/api/product/list is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-21 01:28:39.642 +03:00 [INF] requestId: 0HMCK33OS3ESH:0000000D, previousRequestId: no previous request id, message: Client has been authenticated for /product-service/api/product/list
+2021-10-21 01:28:39.642 +03:00 [INF] requestId: 0HMCK33OS3ESH:0000000D, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-21 01:28:39.642 +03:00 [INF] requestId: 0HMCK33OS3ESH:0000000D, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+2021-10-21 01:28:39.642 +03:00 [INF] requestId: 0HMCK33OS3ESH:0000000D, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-21 01:28:39.651 +03:00 [INF] requestId: 0HMCK33OS3ESH:0000000D, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5002/api/product/list
+2021-10-21 01:28:39.676 +03:00 [INF] HTTP GET /product-service/api/product/list responded 200 in 35.4403 ms. RequestId: 29310daa-3b8b-491f-87e1-4a8e2bcf8d6f Request Body http localhost:5000/product-service/api/product/list   and Response 200: [{"productId":1,"name":"Product-1"},{"productId":2,"name":"Product-2"}]. Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:28:41.311 +03:00 [INF] requestId: 0HMCK33OS3ESH:000002021-10-21 01:29:38.562 +03:00 [INF] requestId: 0HMCK34D31DCO:00000001, previousRequestId: no previous request id, message: /product-service/api/product/list is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-21 01:29:38.793 +03:00 [INF] requestId: 0HMCK34D31DCO:00000001, previousRequestId: no previous request id, message: Client has been authenticated for /product-service/api/product/list
+2021-10-21 01:29:38.795 +03:00 [INF] requestId: 0HMCK34D31DCO:00000001, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-21 01:29:38.795 +03:00 [INF] requestId: 0HMCK34D31DCO:00000001, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+2021-10-21 01:29:38.795 +03:00 [INF] requestId: 0HMCK34D31DCO:00000001, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-21 01:29:38.820 +03:00 [WRN] requestId: 0HMCK34D31DCO:00000001, previousRequestId: no previous request id, message: ReRoute Ocelot.Values.UpstreamPathTemplate specifies use QoS but no QosHandler found in DI container. Will use not use a QosHandler, please check your setup!
+2021-10-21 01:29:39.028 +03:00 [INF] requestId: 0HMCK34D31DCO:00000001, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5002/api/product/list
+2021-10-21 01:29:39.051 +03:00 [INF] HTTP GET /product-service/api/product/list responded 200 in 571.0483 ms. RequestId: 30dcb55d-d4d9-44c4-ac09-436fdae82f94 Request Body http localhost:5000/product-service/api/product/list   and Response 200: [{"productId":1,"name":"Product-1"},{"productId":2,"name":"Product-2"}]. Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:29:39.938 +03:00 [INF] requestId: 0HMCK34D31DCO:00000002, previousRequestId: no previous request id, message: /product-service/api/product/list is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-21 01:29:39.949 +03:00 [INF] requestId: 0HMCK34D31DCO:00000002, previousRequestId: no previous request id, message: Client has been authenticated for /product-service/api/product/list
+2021-10-21 01:29:39.949 +03:00 [INF] requestId: 0HMCK34D31DCO:00000002, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-21 01:29:39.949 +03:00 [INF] requestId: 0HMCK34D31DCO:00000002, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+2021-10-21 01:29:39.949 +03:00 [INF] requestId: 0HMCK34D31DCO:00000002, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-21 01:29:39.971 +03:00 [INF] requestId: 0HMCK34D31DCO:00000002, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5002/api/product/list
+2021-10-21 01:29:39.972 +03:00 [INF] HTTP GET /product-service/api/product/list responded 200 in 37.7767 ms. RequestId: d044b304-ba1e-4eae-a00b-eeff8f370f30 Request Body http localhost:5000/product-service/api/product/list   and Response 200: [{"productId":1,"name":"Product-1"},{"productId":2,"name":"Product-2"}]. Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:29:41.259 +03:00 [INF] requestId: 0HMCK34D31DCO:00000003, previousRequestId: no previous request id, message: /product-service/api/product/list is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-21 01:29:41.260 +03:00 [INF] requestId: 0HMCK34D31DCO:00000003, previousRequestId: no previous request id, message: Client has been authenticated for /product-service/api/product/list
+2021-10-21 01:29:41.260 +03:00 [INF] requestId: 0HMCK34D31DCO:00000003, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-21 01:29:41.260 +03:00 [INF] requestId: 0HMCK34D31DCO:00000003, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+2021-10-21 01:29:41.260 +03:00 [INF] requestId: 0HMCK34D31DCO:00000003, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-21 01:29:41.263 +03:00 [INF] requestId: 0HMCK34D31DCO:00000003, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5002/api/product/list
+2021-10-21 01:29:41.285 +03:00 [INF] HTTP GET /product-service/api/product/list responded 200 in 26.9026 ms. RequestId: 2e5f9293-7cb2-4ea6-82a4-9693c9a3d9f9 Request Body http localhost:5000/product-service/api/product/list   and Response 200: [{"productId":1,"name":"Product-1"},{"productId":2,"name":"Product-2"}]. Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:29:42.500 +03:00 [INF] requestId: 0HMCK34D31DCO:00000004, previousRequestId: no previous request id, message: /product-service/api/product/list is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-21 01:29:42.501 +03:00 [INF] requestId: 0HMCK34D31DCO:00000004, previousRequestId: no previous request id, message: Client has been authenticated for /product-service/api/product/list
+2021-10-21 01:29:42.501 +03:00 [INF] requestId: 0HMCK34D31DCO:00000004, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-21 01:29:42.501 +03:00 [INF] requestId: 0HMCK34D31DCO:00000004, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+2021-10-21 01:29:42.501 +03:00 [INF] requestId: 0HMCK34D31DCO:00000004, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-21 01:29:42.528 +03:00 [INF] requestId: 0HMCK34D31DCO:00000004, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5002/api/product/list
+2021-10-21 01:29:42.590 +03:00 [INF] HTTP GET /product-service/api/product/list responded 200 in 90.6036 ms. RequestId: 21d13e86-7805-48fd-b547-9c0d13927d33 Request Body http localhost:5000/product-service/api/product/list   and Response 200: [{"productId":1,"name":"Product-1"},{"productId":2,"name":"Product-2"}]. Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:29:42.767 +03:00 [INF] requestId: 0HMCK34D31DCO:00000005, previousRequestId: no previous request id, message: Request get:/product-service/api/product/list from ClientId client has been blocked, quota 1/1s exceeded by 2. Blocked by rule /product-service/api/{catchAll}, TraceIdentifier 0HMCK34D4B94C.
+2021-10-21 01:29:42.773 +03:00 [WRN] requestId: 0HMCK34D31DCO:00000005, previousRequestId: no previous request id, message: Error Code: QuotaExceededError Message: API calls quota exceeded! maximum admitted 1 per 1s. errors found in ResponderMiddleware. Setting error response for request path:/product-service/api/product/list, request method: GET
+2021-10-21 01:29:42.794 +03:00 [WRN] HTTP GET /product-service/api/product/list responded 429 in 11.6930 ms. RequestId: 341ee6ed-ef2d-41fc-a259-c67d01bea2f3 Request Body http localhost:5000/product-service/api/product/list   and Response 429: API calls quota exceeded! maximum admitted 1 per 1s.. Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:29:44.654 +03:00 [INF] requestId: 0HMCK34D31DCO:00000006, previousRequestId: no previous request id, message: /product-service/api/product/list is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-21 01:29:44.655 +03:00 [INF] requestId: 0HMCK34D31DCO:00000006, previousRequestId: no previous request id, message: Client has been authenticated for /product-service/api/product/list
+2021-10-21 01:29:44.655 +03:00 [INF] requestId: 0HMCK34D31DCO:00000006, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-21 01:29:44.655 +03:00 [INF] requestId: 0HMCK34D31DCO:00000006, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+2021-10-21 01:29:44.655 +03:00 [INF] requestId: 0HMCK34D31DCO:00000006, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-21 01:29:44.660 +03:00 [INF] requestId: 0HMCK34D31DCO:00000006, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5002/api/product/list
+2021-10-21 01:29:44.790 +03:00 [INF] HTTP GET /product-service/api/product/list responded 200 in 136.2823 ms. RequestId: a62ccb46-1971-48bb-8a4e-47b6474a827a Request Body http localhost:5000/product-service/api/product/list   and Response 200: [{"productId":1,"name":"Product-1"},{"productId":2,"name":"Product-2"}]. Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:29:46.029 +03:00 [INF] requestId: 0HMCK34D31DCO:00000007, previousRequestId: no previous request id, message: /product-service/api/product/list is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-21 01:29:46.029 +03:00 [INF] requestId: 0HMCK34D31DCO:00000007, previousRequestId: no previous request id, message: Client has been authenticated for /product-service/api/product/list
+2021-10-21 01:29:46.029 +03:00 [INF] requestId: 0HMCK34D31DCO:00000007, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-21 01:29:46.029 +03:00 [INF] requestId: 0HMCK34D31DCO:00000007, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+2021-10-21 01:29:46.029 +03:00 [INF] requestId: 0HMCK34D31DCO:00000007, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-21 01:29:46.034 +03:00 [INF] requestId: 0HMCK34D31DCO:00000007, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5002/api/product/list
+2021-10-21 01:29:46.184 +03:00 [INF] HTTP GET /product-service/api/product/list responded 200 in 155.8038 ms. RequestId: af4faf2c-6780-4637-aa7b-ba8aa08d859c Request Body http localhost:5000/product-service/api/product/list   and Response 200: [{"productId":1,"name":"Product-1"},{"productId":2,"name":"Product-2"}]. Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:29:47.032 +03:00 [INF] requestId: 0HMCK34D31DCO:00000008, previousRequestId: no previous request id, message: /product-service/api/product/list is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-21 01:29:47.032 +03:00 [INF] requestId: 0HMCK34D31DCO:00000008, previousRequestId: no previous request id, message: Client has been authenticated for /product-service/api/product/list
+2021-10-21 01:29:47.032 +03:00 [INF] requestId: 0HMCK34D31DCO:00000008, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-21 01:29:47.032 +03:00 [INF] requestId: 0HMCK34D31DCO:00000008, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+2021-10-21 01:29:47.032 +03:00 [INF] requestId: 0HMCK34D31DCO:00000008, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-21 01:29:47.039 +03:00 [INF] requestId: 0HMCK34D31DCO:00000008, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5002/api/product/list
+2021-10-21 01:29:47.148 +03:00 [INF] HTTP GET /product-service/api/product/list responded 200 in 116.8658 ms. RequestId: 095d393d-aad3-4e00-81dc-39d66e0ef645 Request Body http localhost:5000/product-service/api/product/list   and Response 200: [{"productId":1,"name":"Product-1"},{"productId":2,"name":"Product-2"}]. Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:29:47.546 +03:00 [INF] requestId: 0HMCK34D31DCO:00000009, previousRequestId: no previous request id, message: Request get:/product-ser2021-10-21 01:31:13.801 +03:00 [INF] requestId: 0HMCK359FDLDR:00000001, previousRequestId: no previous request id, message: /product-service/api/product/list is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-21 01:31:14.059 +03:00 [INF] requestId: 0HMCK359FDLDR:00000001, previousRequestId: no previous request id, message: Client has been authenticated for /product-service/api/product/list
+2021-10-21 01:31:14.061 +03:00 [INF] requestId: 0HMCK359FDLDR:00000001, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-21 01:31:14.062 +03:00 [INF] requestId: 0HMCK359FDLDR:00000001, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+2021-10-21 01:31:14.062 +03:00 [INF] requestId: 0HMCK359FDLDR:00000001, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-21 01:31:14.087 +03:00 [WRN] requestId: 0HMCK359FDLDR:00000001, previousRequestId: no previous request id, message: ReRoute Ocelot.Values.UpstreamPathTemplate specifies use QoS but no QosHandler found in DI container. Will use not use a QosHandler, please check your setup!
+2021-10-21 01:31:14.135 +03:00 [INF] requestId: 0HMCK359FDLDR:00000001, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5002/api/product/list
+2021-10-21 01:31:14.160 +03:00 [INF] HTTP GET /product-service/api/product/list responded 200 in 434.5513 ms. RequestId: 60219ae5-a4ec-447a-acab-ba4b4269ec3b Request Body http localhost:5000/product-service/api/product/list   and Response 200: [{"productId":1,"name":"Product-1"},{"productId":2,"name":"Product-2"}]. Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:31:15.049 +03:00 [INF] requestId: 0HMCK359FDLDR:00000002, previousRequestId: no previous request id, message: /product-service/api/product/list is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-21 01:31:15.058 +03:00 [INF] requestId: 0HMCK359FDLDR:00000002, previousRequestId: no previous request id, message: Client has been authenticated for /product-service/api/product/list
+2021-10-21 01:31:15.058 +03:00 [INF] requestId: 0HMCK359FDLDR:00000002, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-21 01:31:15.058 +03:00 [INF] requestId: 0HMCK359FDLDR:00000002, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+2021-10-21 01:31:15.058 +03:00 [INF] requestId: 0HMCK359FDLDR:00000002, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-21 01:31:15.088 +03:00 [INF] requestId: 0HMCK359FDLDR:00000002, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5002/api/product/list
+2021-10-21 01:31:15.245 +03:00 [INF] HTTP GET /product-service/api/product/list responded 200 in 201.0097 ms. RequestId: c0261c5c-d628-47c5-bc19-18de300c7327 Request Body http localhost:5000/product-service/api/product/list   and Response 200: [{"productId":1,"name":"Product-1"},{"productId":2,"name":"Product-2"}]. Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:31:15.522 +03:00 [INF] requestId: 0HMCK359FDLDR:00000003, previousRequestId: no previous request id, message: Request get:/product-service/api/product/list from ClientId client has been blocked, quota 1/1s exceeded by 2. Blocked by rule /product-service/api/{catchAll}, TraceIdentifier 0HMCK359GK45D.
+2021-10-21 01:31:15.574 +03:00 [ERR] requestId: 0HMCK359FDLDR:00000003, previousRequestId: no previous request id, message: Exception caught in global error handler, exception message: Specified argument was out of the range of valid values. (Parameter 'statusCode'), exception stack:    at System.Net.Http.HttpResponseMessage..ctor(HttpStatusCode statusCode)
+   at Ocelot.RateLimit.Middleware.ClientRateLimitMiddleware.ReturnQuotaExceededResponse(HttpContext httpContext, RateLimitOptions option, String retryAfter)
+   at Ocelot.RateLimit.Middleware.ClientRateLimitMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Request.Middleware.DownstreamRequestInitialiserMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Headers.Middleware.HttpHeadersTransformationMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Security.Middleware.SecurityMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Multiplexer.MultiplexingMiddleware.Fire(HttpContext httpContext, RequestDelegate next)
+   at Ocelot.Multiplexer.MultiplexingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Responder.Middleware.ResponderMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Errors.Middleware.ExceptionHandlerMiddleware.Invoke(HttpContext httpContext) RequestId: 0HMCK359FDLDR:00000003
+System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values. (Parameter 'statusCode')
+   at System.Net.Http.HttpResponseMessage..ctor(HttpStatusCode statusCode)
+   at Ocelot.RateLimit.Middleware.ClientRateLimitMiddleware.ReturnQuotaExceededResponse(HttpContext httpContext, RateLimitOptions option, String retryAfter)
+   at Ocelot.RateLimit.Middleware.ClientRateLimitMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Request.Middleware.DownstreamRequestInitialiserMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Headers.Middleware.HttpHeadersTransformationMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Security.Middleware.SecurityMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Multiplexer.MultiplexingMiddleware.Fire(HttpContext httpContext, RequestDelegate next)
+   at Ocelot.Multiplexer.MultiplexingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Responder.Middleware.ResponderMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Errors.Middleware.ExceptionHandlerMiddleware.Invoke(HttpContext httpContext)
+2021-10-21 01:31:15.582 +03:00 [ERR] HTTP GET /product-service/api/product/list responded 500 in 54.1223 ms. RequestId: f8050803-16d2-4713-b10a-0ecac7720dbc Request Body http localhost:5000/product-service/api/product/list   and Response 500: . Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:31:18.327 +03:00 [INF] requestId: 0HMCK359FDLDR:00000004, previousRequestId: no previous request id, message: /product-service/api/product/list is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-21 01:31:18.329 +03:00 [INF] requestId: 0HMCK359FDLDR:00000004, previousRequestId: no previous request id, message: Client has been authenticated for /product-service/api/product/list
+2021-10-21 01:31:18.329 +03:00 [INF] requestId: 0HMCK359FDLDR:00000004, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-21 01:31:18.329 +03:00 [INF] requestId: 0HMCK359FDLDR:00000004, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+2021-10-21 01:31:18.329 +03:00 [INF] requestId: 0HMCK359FDLDR:00000004, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-21 01:31:18.335 +03:00 [INF] requestId: 0HMCK359FDLDR:00000004, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5002/api/product/list
+2021-10-21 01:31:18.367 +03:00 [INF] HTTP GET /product-service/api/product/list responded 200 in 40.9678 ms. RequestId: 9238ede5-294e-47c6-a6df-b77378ce9792 Request Body http localhost:5000/product-service/api/product/list   and Response 200: [{"productId":1,"name":"Product-1"},{"productId":2,"name":"Product-2"}]. Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:31:18.839 +03:00 [INF] requestId: 0HMCK359FDLDR:00000005, previousRequestId: no previous request id, message: Request get:/product-service/api/product/list from ClientId client has been blocked, quota 1/1s exceeded by 2. Blocked by rule /product-service/api/{catchAll}, TraceIdentifier 0HMCK359GK45F.
+2021-10-21 01:31:18.842 +03:00 [ERR] requestId: 0HMCK359FDLDR:00000005, previousRequestId: no previous request id, message: Exception caught in global error handler, exception message: Specified argument was out of the range of valid values. (Parameter 'statusCode'), exception stack:    at System.Net.Http.HttpResponseMessage..ctor(HttpStatusCode statusCode)
+   at Ocelot.RateLimit.Middleware.ClientRateLimitMiddleware.ReturnQuotaExceededResponse(HttpContext httpContext, RateLimitOptions option, String retryAfter)
+   at Ocelot.RateLimit.Middleware.ClientRateLimitMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Request.Middleware.DownstreamRequestInitialiserMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Headers.Middleware.HttpHeadersTransformationMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Security.Middleware.SecurityMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Multiplexer.MultiplexingMiddleware.Fire(HttpContext httpContext, RequestDelegate next)
+   at Ocelot.Multiplexer.MultiplexingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Responder.Middleware.ResponderMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Errors.Middleware.ExceptionHandlerMiddleware.Invoke(HttpContext httpContext) RequestId: 0HMCK359FDLDR:00000005
+System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values. (Parameter 'statusCode')
+   at System.Net.Http.HttpResponseMessage..ctor(HttpStatusCode statusCode)
+   at Ocelot.RateLimit.Middleware.ClientRateLimitMiddleware.ReturnQuotaExceededResponse(HttpContext httpContext, RateLimitOptions option, String retryAfter)
+   at Ocelot.RateLimit.Middleware.ClientRateLimitMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Request.Middleware.DownstreamRequestInitialiserMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Headers.Middleware.HttpHeadersTransformationMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Security.Middleware.SecurityMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Multiplexer.MultiplexingMiddleware.Fire(HttpContext httpContext, RequestDelegate next)
+   at Ocelot.Multiplexer.MultiplexingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Responder.Middleware.ResponderMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Errors.Middleware.ExceptionHandlerMiddleware.Invoke(HttpContext httpContext)
+2021-10-21 01:31:18.843 +03:00 [ERR] HTTP GET /product-service/api/product/list responded 500 in 3.8244 ms. RequestId: 61f27b29-1768-4e69-b97c-7b9af2d705b9 Request Body http localhost:5000/product-service/api/product/list   and Response 500: . Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:31:19.642 +03:00 [INF] requestId: 0HMCK359FDLDR:00000006, previousRequestId: no previous request id, message: /product-service/api/product/list is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-21 01:31:19.642 +03:00 [INF] requestId: 0HMCK359FDLDR:00000006, previousRequestId: no previous request id, message: Client has been authenticated for /product-service/api/product/list
+2021-10-21 01:31:19.642 +03:00 [INF] requestId: 0HMCK359FDLDR:00000006, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-21 01:31:19.642 +03:00 [INF] requestId: 0HMCK359FDLDR:00000006, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+2021-10-21 01:31:19.642 +03:00 [INF] requestId: 0HMCK359FDLDR:00000006, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-21 01:31:19.666 +03:00 [INF] requestId: 0HMCK359FDLDR:00000006, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5002/api/product/list
+2021-10-21 01:31:19.711 +03:00 [INF] HTTP GET /product-service/api/product/list responded 200 in 70.2491 ms. RequestId: c8885abb-1958-403e-ac30-0d28ee52566a Request Body http localhost:5000/product-service/api/product/list   and Response 200: [{"productId":1,"name":"Product-1"},{"productId":2,"name":"Product-2"}]. Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:31:20.737 +03:00 [INF] requestId: 0HMCK359FDLDR:00000007, previousRequestId: no previous request id, message: /product-service/api/product/list is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-21 01:31:20.738 +03:00 [INF] requestId: 0HMCK359FDLDR:00000007, previousRequestId: no previous request id, message: Client has been authenticated for /product-service/api/product/list
+2021-10-21 01:31:20.738 +03:00 [INF] requestId: 0HMCK359FDLDR:00000007, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-21 01:31:20.738 +03:00 [INF] requestId: 0HMCK359FDLDR:00000007, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+2021-10-21 01:31:20.738 +03:00 [INF] requestId: 0HMCK359FDLDR:00000007, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-21 01:31:20.760 +03:00 [INF] requestId: 0HMCK359FDLDR:00000007, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5002/api/product/list
+2021-10-21 01:31:20.867 +03:00 [INF] HTTP GET /product-service/api/product/list responded 200 in 129.9986 ms. RequestId: 629566ec-6ac6-4712-a366-637cb18f2fee Request Body http localhost:5000/product-service/api/product/list   and Response 200: [{"productId":1,"name":"Product-1"},{"productId":2,"name":"Product-2"}]. Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:31:21.805 +03:00 [INF] requestId: 0HMCK359FDLDR:00000008, previousRequestId: no previous request id, message: /product-service/api/product/list is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-21 01:31:21.805 +03:00 [INF] requestId: 0HMCK359FDLDR:00000008, previousRequestId: no previous request id, message: Client has been authenticated for /product-service/api/product/list
+2021-10-21 01:31:21.805 +03:00 [INF] requestId: 0HMCK359FDLDR:00000008, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-21 01:31:21.805 +03:00 [INF] requestId: 0HMCK359FDLDR:00000008, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+2021-10-21 01:31:21.805 +03:00 [INF] requestId: 0HMCK359FDLDR:00000008, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-21 01:31:21.848 +03:00 [INF] requestId: 0HMCK359FDLDR:00000008, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5002/api/product/list
+2021-10-21 01:31:21.977 +03:00 [INF] HTTP GET /product-service/api/product/list responded 200 in 172.4768 ms. RequestId: 50a36709-efef-443e-9586-0cdf06ff2daa Request Body http localhost:5000/product-service/api/product/list   and Response 200: [{"productId":1,"name":"Product-1"},{"productId":2,"name":"Product-2"}]. Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:31:22.390 +03:00 [INF] requestId: 0HMCK359FDLDR:00000009, previousRequestId: no previous request id, message: Request get:/product-service/api/product/list from ClientId client has been blocked, quota 1/1s exceeded by 2. Blocked by rule /product-service/api/{catchAll}, TraceIdentifier 0HMCK359GK45J.
+2021-10-21 01:31:22.393 +03:00 [ERR] requestId: 0HMCK359FDLDR:00000009, previousRequestId: no previous request id, message: Exception caught in global error handler, exception message: Specified argument was out of the range of valid values. (Parameter 'statusCode'), exception stack:    at System.Net.Http.HttpResponseMessage..ctor(HttpStatusCode statusCode)
+   at Ocelot.RateLimit.Middleware.ClientRateLimitMiddleware.ReturnQuotaExceededResponse(HttpContext httpContext, RateLimitOptions option, String retryAfter)
+   at Ocelot.RateLimit.Middleware.ClientRateLimitMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Request.Middleware.DownstreamRequestInitialiserMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Headers.Middleware.HttpHeadersTransformationMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Security.Middleware.SecurityMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Multiplexer.MultiplexingMiddleware.Fire(HttpContext httpContext, RequestDelegate next)
+   at Ocelot.Multiplexer.MultiplexingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Responder.Middleware.ResponderMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Errors.Middleware.ExceptionHandlerMiddleware.Invoke(HttpContext httpContext) RequestId: 0HMCK359FDLDR:00000009
+System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values. (Parameter 'statusCode')
+   at System.Net.Http.HttpResponseMessage..ctor(HttpStatusCode statusCode)
+   at Ocelot.RateLimit.Middleware.ClientRateLimitMiddleware.ReturnQuotaExceededResponse(HttpContext httpContext, RateLimitOptions option, String retryAfter)
+   at Ocelot.RateLimit.Middleware.ClientRateLimitMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Request.Middleware.DownstreamRequestInitialiserMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Headers.Middleware.HttpHeadersTransformationMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Security.Middleware.SecurityMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Multiplexer.MultiplexingMiddleware.Fire(HttpContext httpContext, RequestDelegate next)
+   at Ocelot.Multiplexer.MultiplexingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Responder.Middleware.ResponderMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Errors.Middleware.ExceptionHandlerMiddleware.Invoke(HttpContext httpContext)
+2021-10-21 01:31:22.393 +03:00 [ERR] HTTP GET /product-service/api/product/list responded 500 in 3.2198 ms. RequestId: b83ade4e-01fb-49ef-a4dc-41cfc9942bc5 Request Body http localhost:5000/product-service/api/product/list   and Response 500: . Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:31:22.831 +03:00 [INF] requestId: 0HMCK359FDLDR:0000000A, previousRequestId: no previous request id, message: /product-service/api/product/list is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-21 01:31:22.832 +03:00 [INF] requestId: 0HMCK359FDLDR:0000000A, previousRequestId: no previous request id, message: Client has been authenticated for /product-service/api/product/list
+2021-10-21 01:31:22.832 +03:00 [INF] requestId: 0HMCK359FDLDR:0000000A, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-21 01:31:22.832 +03:00 [INF] requestId: 0HMCK359FDLDR:0000000A, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+2021-10-21 01:31:22.832 +03:00 [INF] requestId: 0HMCK359FDLDR:0000000A, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-21 01:31:22.835 +03:00 [INF] requestId: 0HMCK359FDLDR:0000000A, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5002/api/product/list
+2021-10-21 01:31:22.986 +03:00 [INF] HTTP GET /product-service/api/product/list responded 200 in 155.4125 ms. RequestId: 26e5b94b-7193-4b5a-a458-9c705764f443 Request Body http localhost:5000/product-service/api/product/list   and Response 200: [{"productId":1,"name":"Product-1"},{"productId":2,"name":"Product-2"}]. Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:31:23.254 +03:00 [INF] requestId: 0HMCK359FDLDR:0000000B, previousRequestId: no previous request id, message: Request get:/product-service/api/product/list from ClientId client has been blocked, quota 1/1s exceeded by 2. Blocked by rule /product-service/api/{catchAll}, TraceIdentifier 0HMCK359GK45L.
+2021-10-21 01:31:23.256 +03:00 [ERR] requestId: 0HMCK359FDLDR:0000000B, previousRequestId: no previous request id, message: Exception caught in global error handler, exception message: Specified argument was out of the range of valid values. (Parameter 'statusCode'), exception stack:    at System.Net.Http.HttpResponseMessage..ctor(HttpStatusCode statusCode)
+   at Ocelot.RateLimit.Middleware.ClientRateLimitMiddleware.ReturnQuotaExceededResponse(HttpContext httpContext, RateLimitOptions option, String retryAfter)
+   at Ocelot.RateLimit.Middleware.ClientRateLimitMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Request.Middleware.DownstreamRequestInitialiserMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Headers.Middleware.HttpHeadersTransformationMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Security.Middleware.SecurityMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Multiplexer.MultiplexingMiddleware.Fire(HttpContext httpContext, RequestDelegate next)
+   at Ocelot.Multiplexer.MultiplexingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Responder.Middleware.ResponderMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisMiddleware.Invoke(HttpContext httpContext)
+   at Ocelot.Errors.Middleware.ExceptionHandlerMiddleware.Invoke(HttpContext httpContext) RequestId: 0HMCK359FDLDR:0000000B
+System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values. (Parameter 'statusCode')
+   at System.Net.Http.2021-10-21 01:32:39.633 +03:00 [INF] requestId: 0HMCK3631KISV:00000001, previousRequestId: no previous request id, message: /product-service/api/product/list is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-21 01:32:39.880 +03:00 [INF] requestId: 0HMCK3631KISV:00000001, previousRequestId: no previous request id, message: Client has been authenticated for /product-service/api/product/list
+2021-10-21 01:32:39.882 +03:00 [INF] requestId: 0HMCK3631KISV:00000001, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-21 01:32:39.883 +03:00 [INF] requestId: 0HMCK3631KISV:00000001, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+2021-10-21 01:32:39.883 +03:00 [INF] requestId: 0HMCK3631KISV:00000001, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-21 01:32:39.907 +03:00 [WRN] requestId: 0HMCK3631KISV:00000001, previousRequestId: no previous request id, message: ReRoute Ocelot.Values.UpstreamPathTemplate specifies use QoS but no QosHandler found in DI container. Will use not use a QosHandler, please check your setup!
+2021-10-21 01:32:39.957 +03:00 [INF] requestId: 0HMCK3631KISV:00000001, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5002/api/product/list
+2021-10-21 01:32:39.984 +03:00 [INF] HTTP GET /product-service/api/product/list responded 200 in 434.3641 ms. RequestId: ef685ffe-62f9-4395-9dd7-7ceb4475abd6 Request Body http localhost:5000/product-service/api/product/list   and Response 200: [{"productId":1,"name":"Product-1"},{"productId":2,"name":"Product-2"}]. Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:32:46.429 +03:00 [INF] requestId: 0HMCK3631KISV:00000002, previousRequestId: no previous request id, message: /product-service/api/product/list is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-21 01:32:46.430 +03:00 [INF] requestId: 0HMCK3631KISV:00000002, previousRequestId: no previous request id, message: Client has been authenticated for /product-service/api/product/list
+2021-10-21 01:32:46.430 +03:00 [INF] requestId: 0HMCK3631KISV:00000002, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-21 01:32:46.430 +03:00 [INF] requestId: 0HMCK3631KISV:00000002, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+2021-10-21 01:32:46.431 +03:00 [INF] requestId: 0HMCK3631KISV:00000002, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-21 01:32:46.525 +03:00 [INF] requestId: 0HMCK3631KISV:00000002, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5002/api/product/list
+2021-10-21 01:32:46.743 +03:00 [INF] HTTP GET /product-service/api/product/list responded 200 in 316.8885 ms. RequestId: 9780073c-284a-4745-b4f7-c8cd95b02d7e Request Body http localhost:5000/product-service/api/product/list   and Response 200: [{"productId":1,"name":"Product-1"},{"productId":2,"name":"Product-2"}]. Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-21 01:32:47.540 +03:00 [INF] requestId: 0HMCK3631KISV:00000003, previousRequestId: no previous request id, message: /product-service/api/product/list is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-21 01:32:47.541 +03:00 [INF] requestId: 0HMCK3631KISV:00000003, previousRequestId: no previous request id, message: Client has been authenticated for /product-service/api/product/list
+2021-10-21 01:32:47.541 +03:00 [INF] requestId: 0HMCK3631KISV:00000003, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-21 01:32:47.541 +03:00 [INF] requestId: 0HMCK3631KISV:00000003, previousRequestId: no previous reque

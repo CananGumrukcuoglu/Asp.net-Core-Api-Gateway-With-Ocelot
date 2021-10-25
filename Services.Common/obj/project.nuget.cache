@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "W8wv4K1IBlwY12UQSbFD9TgGpD81gBsAddHa8205+bPyWxg3Un4wxBXrEsEynRZ25/2YdnfDoYVsiVowJyl/WA==",
+  "success": true,
+  "projectFilePath": "/home/canan/projects/Asp.net-Core-Api-Gateway-With-Ocelot/Services.Common/Services.Common.csproj",
+  "expectedPackageFiles": [
+    "/home/canan/.nuget/packages/microsoft.aspnetcore.http.abstractions/2.2.0/microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
+    "/home/canan/.nuget/packages/microsoft.aspnetcore.http.features/2.2.0/microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
+    "/home/canan/.nuget/packages/microsoft.extensions.primitives/2.2.0/microsoft.extensions.primitives.2.2.0.nupkg.sha512",
+    "/home/canan/.nuget/packages/system.memory/4.5.1/system.memory.4.5.1.nupkg.sha512",
+    "/home/canan/.nuget/packages/system.runtime.compilerservices.unsafe/4.5.1/system.runtime.compilerservices.unsafe.4.5.1.nupkg.sha512",
+    "/home/canan/.nuget/packages/system.text.encodings.web/4.5.0/system.text.encodings.web.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

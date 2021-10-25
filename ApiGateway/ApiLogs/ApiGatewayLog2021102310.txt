@@ -1,0 +1,147 @@
+2021-10-23 10:41:25.758 +03:00 [INF] requestId: 0HMCLV225443O:00000001, previousRequestId: no previous request id, message: /product-service/api/product/list is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-23 10:41:25.988 +03:00 [WRN] requestId: 0HMCLV225443O:00000001, previousRequestId: no previous request id, message: Client has NOT been authenticated for /product-service/api/product/list and pipeline error set. Request for authenticated route /product-service/api/product/list by  was unauthenticated
+2021-10-23 10:41:26.007 +03:00 [WRN] requestId: 0HMCLV225443O:00000001, previousRequestId: no previous request id, message: Error Code: UnauthenticatedError Message: Request for authenticated route /product-service/api/product/list by  was unauthenticated errors found in ResponderMiddleware. Setting error response for request path:/product-service/api/product/list, request method: GET
+2021-10-23 10:41:26.046 +03:00 [WRN] HTTP GET /product-service/api/product/list responded 401 in 423.0693 ms. RequestId: 8f520808-ee8d-4524-93f3-a202ca4e1d80 Request Body http localhost:5000/product-service/api/product/list   and Response 401: . Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-23 10:44:36.691 +03:00 [INF] requestId: 0HMCLV225443O:00000002, previousRequestId: no previous request id, message: /product-service/api/product/list is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-23 10:44:37.073 +03:00 [INF] requestId: 0HMCLV225443O:00000002, previousRequestId: no previous request id, message: Client has been authenticated for /product-service/api/product/list
+2021-10-23 10:44:37.078 +03:00 [INF] requestId: 0HMCLV225443O:00000002, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-23 10:44:37.081 +03:00 [INF] requestId: 0HMCLV225443O:00000002, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+2021-10-23 10:44:37.081 +03:00 [INF] requestId: 0HMCLV225443O:00000002, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-23 10:44:37.307 +03:00 [INF] requestId: 0HMCLV225443O:00000002, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5002/api/product/list
+2021-10-23 10:44:37.321 +03:00 [INF] HTTP GET /product-service/api/product/list responded 200 in 632.3763 ms. RequestId: 479bba49-a20f-40b7-937e-3cd1499d12f3 Request Body http localhost:5000/product-service/api/product/list   and Response 200: [{"productId":1,"name":"Product-1"},{"productId":2,"name":"Product-2"}]. Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-23 10:45:21.964 +03:00 [INF] requestId: 0HMCLV225443O:00000003, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/{catchAll}
+2021-10-23 10:45:21.964 +03:00 [INF] requestId: 0HMCLV225443O:00000003, previousRequestId: no previous request id, message: /customer-service/api/customer/list is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-23 10:45:21.970 +03:00 [WRN] requestId: 0HMCLV225443O:00000003, previousRequestId: no previous request id, message: Client has NOT been authenticated for /customer-service/api/customer/list and pipeline error set. Request for authenticated route /customer-service/api/customer/list by  was unauthenticated
+2021-10-23 10:45:21.970 +03:00 [WRN] requestId: 0HMCLV225443O:00000003, previousRequestId: no previous request id, message: Error Code: UnauthenticatedError Message: Request for authenticated route /customer-service/api/customer/list by  was unauthenticated errors found in ResponderMiddleware. Setting error response for request path:/customer-service/api/customer/list, request method: GET
+2021-10-23 10:45:21.970 +03:00 [WRN] HTTP GET /customer-service/api/customer/list responded 401 in 7.2080 ms. RequestId: 3d070c55-8906-494e-a5b6-53ad79011879 Request Body http localhost:5000/customer-service/api/customer/list   and Response 401: . Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-23 10:45:29.430 +03:00 [INF] requestId: 0HMCLV225443O:00000004, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/{catchAll}
+2021-10-23 10:45:29.430 +03:00 [INF] requestId: 0HMCLV225443O:00000004, previousRequestId: no previous request id, message: /customer-service/api/customer/list is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-23 10:45:29.431 +03:00 [INF] requestId: 0HMCLV225443O:00000004, previousRequestId: no previous request id, message: Client has been authenticated for /customer-service/api/customer/list
+2021-10-23 10:45:29.431 +03:00 [INF] requestId: 0HMCLV225443O:00000004, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-23 10:45:29.431 +03:00 [INF] requestId: 0HMCLV225443O:00000004, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+2021-10-23 10:45:29.431 +03:00 [INF] requestId: 0HMCLV225443O:00000004, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-23 10:45:29.545 +03:00 [WRN] requestId: 0HMCLV225443O:00000004, previousRequestId: no previous request id, message: Error Code: UnableToCompleteRequestError Message: Error making http request, exception: System.ArgumentException: The enumerable of policies to form the wrap must contain at least two policies. (Parameter 'policies')
+   at Polly.Policy.WrapAsync(IAsyncPolicy[] policies)
+   at Ocelot.Provider.Polly.PollyCircuitBreakingDelegatingHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Ocelot.Requester.HttpClientHttpRequester.GetResponse(HttpContext httpContext) errors found in ResponderMiddleware. Setting error response for request path:/customer-service/api/customer/list, request method: GET
+2021-10-23 10:45:29.547 +03:00 [ERR] HTTP GET /customer-service/api/customer/list responded 500 in 117.1066 ms. RequestId: 38bdcf1b-cc57-42be-81d5-13944b8d5637 Request Body http localhost:5000/customer-service/api/customer/list   and Response 500: . Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-23 10:45:57.412 +03:00 [INF] requestId: 0HMCLV225443O:00000005, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/{catchAll}
+2021-10-23 10:45:57.412 +03:00 [INF] requestId: 0HMCLV225443O:00000005, previousRequestId: no previous request id, message: /customer-service/api/customer/list is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-23 10:45:57.412 +03:00 [INF] requestId: 0HMCLV225443O:00000005, previousRequestId: no previous request id, message: Client has been authenticated for /customer-service/api/customer/list
+2021-10-23 10:45:57.412 +03:00 [INF] requestId: 0HMCLV225443O:00000005, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-23 10:45:57.412 +03:00 [INF] requestId: 0HMCLV225443O:00000005, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+2021-10-23 10:45:57.412 +03:00 [INF] requestId: 0HMCLV225443O:00000005, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-23 10:45:57.414 +03:00 [WRN] requestId: 0HMCLV225443O:00000005, previousRequestId: no previous request id, message: Error Code: UnableToCompleteRequestError Message: Error making http request, exception: System.ArgumentException: The enumerable of policies to form the wrap must contain at least two policies. (Parameter 'policies')
+   at Polly.Policy.WrapAsync(IAsyncPolicy[] policies)
+   at Ocelot.Provider.Polly.PollyCircuitBreakingDelegatingHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Ocelot.Requester.HttpClientHttpRequester.GetResponse(HttpContext httpContext) errors found in ResponderMiddleware. Setting error response for request path:/customer-service/api/customer/list, request method: GET
+2021-10-23 10:45:57.414 +03:00 [ERR] HTTP GET /customer-service/api/customer/list responded 500 in 3.4991 ms. RequestId: f66a0de1-e4ac-4d18-b9d5-674fdaafae72 Request Body http localhost:5000/customer-service/api/customer/list   and Response 500: . Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-23 10:46:20.417 +03:00 [INF] requestId: 0HMCLV225443O:00000006, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/{catchAll}
+2021-10-23 10:46:20.417 +03:00 [INF] requestId: 0HMCLV225443O:00000006, previousRequestId: no previous request id, message: /customer-service/api/customer/list is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-23 10:46:20.418 +03:00 [INF] requestId: 0HMCLV225443O:00000006, previousRequestId: no previous request id, message: Client has been authenticated for /customer-service/api/customer/list
+2021-10-23 10:46:20.418 +03:00 [INF] requestId: 0HMCLV225443O:00000006, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-23 10:46:20.418 +03:00 [INF] requestId: 0HMCLV225443O:00000006, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+2021-10-23 10:46:20.418 +03:00 [INF] requestId: 0HMCLV225443O:00000006, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-23 10:46:20.420 +03:00 [WRN] requestId: 0HMCLV225443O:00000006, previousRequestId: no previous request id, message: Error Code: UnableToCompleteRequestError Message: Error making http request, exception: System.ArgumentException: The enumerable of policies to form the wrap must contain at least two policies. (Parameter 'policies')
+   at Polly.Policy.WrapAsync(IAsyncPolicy[] policies)
+   at Ocelot.Provider.Polly.PollyCircuitBreakingDelegatingHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Ocelot.Requester.HttpClientHttpRequester.GetResponse(HttpContext httpContext) errors found in ResponderMiddleware. Setting error response for request path:/customer-service/api/customer/list, request method: GET
+2021-10-23 10:46:20.420 +03:00 [ERR] HTTP GET /customer-service/api/customer/list responded 500 in 12.3498 ms. RequestId: 14d22e7f-37e0-4762-ae58-7de77cd66d1f Request Body http localhost:5000/customer-service/api/customer/list   and Response 500: . Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-23 10:46:22.153 +03:00 [INF] requestId: 0HMCLV225443O:00000007, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/{catchAll}
+2021-10-23 10:46:22.153 +03:00 [INF] requestId: 0HMCLV225443O:00000007, previousRequestId: no previous request id, message: /customer-service/api/customer/list is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-23 10:46:22.154 +03:00 [INF] requestId: 0HMCLV225443O:00000007, previousRequestId: no previous request id, message: Client has been authenticated for /customer-service/api/customer/list
+2021-10-23 10:46:22.154 +03:00 [INF] requestId: 0HMCLV225443O:00000007, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-23 10:46:22.154 +03:00 [INF] requestId: 0HMCLV225443O:00000007, previousRequestId: no previous request id, message: user scopes is author2021-10-23 10:50:19.701 +03:00 [INF] requestId: 0HMCLV719SL0S:00000001, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/{catchAll}
+2021-10-23 10:50:19.740 +03:00 [INF] requestId: 0HMCLV719SL0S:00000001, previousRequestId: no previous request id, message: /customer-service/api/customer/list is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-23 10:50:20.108 +03:00 [INF] requestId: 0HMCLV719SL0S:00000001, previousRequestId: no previous request id, message: Client has been authenticated for /customer-service/api/customer/list
+2021-10-23 10:50:20.110 +03:00 [INF] requestId: 0HMCLV719SL0S:00000001, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-23 10:50:20.111 +03:00 [INF] requestId: 0HMCLV719SL0S:00000001, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+2021-10-23 10:50:20.111 +03:00 [INF] requestId: 0HMCLV719SL0S:00000001, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-23 10:50:20.224 +03:00 [WRN] requestId: 0HMCLV719SL0S:00000001, previousRequestId: no previous request id, message: Error Code: UnableToCompleteRequestError Message: Error making http request, exception: System.ArgumentException: The enumerable of policies to form the wrap must contain at least two policies. (Parameter 'policies')
+   at Polly.Policy.WrapAsync(IAsyncPolicy[] policies)
+   at Ocelot.Provider.Polly.PollyCircuitBreakingDelegatingHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Ocelot.Requester.HttpClientHttpRequester.GetResponse(HttpContext httpContext) errors found in ResponderMiddleware. Setting error response for request path:/customer-service/api/customer/list, request method: GET
+2021-10-23 10:50:20.247 +03:00 [ERR] HTTP GET /customer-service/api/customer/list responded 500 in 653.7181 ms. RequestId: ffdd3345-951d-472f-860e-3b08b779fa4e Request Body http localhost:5000/customer-service/api/customer/list   and Response 500: . Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-23 10:54:19.025 +03:00 [INF] requestId: 0HMCLV719SL0S:00000002, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/{catchAll}
+2021-10-23 10:54:19.025 +03:00 [INF] requestId: 0HMCLV719SL0S:00000002, previousRequestId: no previous request id, message: /customer-service/api/customer/list is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-23 10:54:19.027 +03:00 [INF] requestId: 0HMCLV719SL0S:00000002, previousRequestId: no previous request id, message: Client has been authenticated for /customer-service/api/customer/list
+2021-10-23 10:54:19.027 +03:00 [INF] requestId: 0HMCLV719SL0S:00000002, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-23 10:54:19.027 +03:00 [INF] requestId: 0HMCLV719SL0S:00000002, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+2021-10-23 10:54:19.027 +03:00 [INF] requestId: 0HMCLV719SL0S:00000002, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-23 10:54:19.035 +03:00 [WRN] requestId: 0HMCLV719SL0S:00000002, previousRequestId: no previous request id, message: Error Code: UnableToCompleteRequestError Message: Error making http request, exception: System.ArgumentException: The enumerable of policies to form the wrap must contain at least two policies. (Parameter 'policies')
+   at Polly.Policy.WrapAsync(IAsyncPolicy[] policies)
+   at Ocelot.Provider.Polly.PollyCircuitBreakingDelegatingHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Ocelot.Requester.HttpClientHttpRequester.GetResponse(HttpContext httpContext) errors found in ResponderMiddleware. Setting error response for request path:/customer-service/api/customer/list, request method: GET
+2021-10-23 10:54:19.036 +03:00 [ERR] HTTP GET /customer-service/api/customer/list responded 500 in 74.0318 ms. RequestId: 317b4d5d-682b-4f4c-a7d9-264ad6df89d2 Request Body http localhost:5000/customer-service/api/customer/list   and Response 500: . Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-23 10:57:49.995 +03:00 [INF] requestId: 0HMCLV719SL0S:00000003, previousRequestId: no previous request id, message: /product-service/api/product/list is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-23 10:57:49.996 +03:00 [INF] requestId: 0HMCLV719SL0S:00000003, previousRequestId: no previous request id, message: Client has been authenticated for /product-service/api/product/list
+2021-10-23 10:57:49.996 +03:00 [INF] requestId: 0HMCLV719SL0S:00000003, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-23 10:57:49.996 +03:00 [INF] requestId: 0HMCLV719SL0S:00000003, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+2021-10-23 10:57:49.996 +03:00 [INF] requestId: 0HMCLV719SL0S:00000003, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-23 10:57:50.232 +03:00 [ERR] requestId: 0HMCLV719SL0S:00000003, previousRequestId: no previous request id, message: Error in CircuitBreakingDelegatingHandler.SendAync
+System.Net.Http.HttpRequestException: Connection refused
+ ---> System.Net.Sockets.SocketException (111): Connection refused
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Polly.Timeout.AsyncTimeoutEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Func`2 timeoutProvider, TimeoutStrategy timeoutStrategy, Func`5 onTimeoutAsync, Boolean continueOnCapturedContext)
+   at Polly.Timeout.AsyncTimeoutEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Func`2 timeoutProvider, TimeoutStrategy timeoutStrategy, Func`5 onTimeoutAsync, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy.ExecuteAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Polly.Wrap.AsyncPolicyWrapEngine.<>c__DisplayClass3_0`1.<<ImplementationAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Polly.CircuitBreaker.AsyncCircuitBreakerPolicy.<>c__DisplayClass8_0`1.<<ImplementationAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Polly.CircuitBreaker.AsyncCircuitBreakerEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext, ExceptionPredicates shouldHandleExceptionPredicates, ResultPredicates`1 shouldHandleResultPredicates, ICircuitController`1 breakerController)
+   at Polly.CircuitBreaker.AsyncCircuitBreakerPolicy.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy.ExecuteAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Polly.Wrap.AsyncPolicyWrapEngine.ImplementationAsync[TResult](Func`3 func, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext, IAsyncPolicy outerPolicy, IAsyncPolicy innerPolicy)
+   at Polly.AsyncPolicy.ExecuteAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Ocelot.Provider.Polly.PollyCircuitBreakingDelegatingHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+2021-10-23 10:57:50.348 +03:00 [WRN] requestId: 0HMCLV719SL0S:00000003, previousRequestId: no previous request id, message: Error Code: ConnectionToDownstreamServiceError Message: Error connecting to downstream service, exception: System.Net.Http.HttpRequestException: Connection refused
+ ---> System.Net.Sockets.SocketException (111): Connection refused
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Polly.Timeout.AsyncTimeoutEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Func`2 timeoutProvider, TimeoutStrategy timeoutStrategy, Func`5 onTimeoutAsync, Boolean continueOnCapturedContext)
+   at Polly.Timeout.AsyncTimeoutEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Func`2 timeoutProvider, TimeoutStrategy timeoutStrategy, Func`5 onTimeoutAsync, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy.ExecuteAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Polly.Wrap.AsyncPolicyWrapEngine.<>c__DisplayClass3_0`1.<<ImplementationAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Polly.CircuitBreaker.AsyncCircuitBreakerPolicy.<>c__DisplayClass8_0`1.<<ImplementationAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Polly.CircuitBreaker.AsyncCircuitBreakerEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext, ExceptionPredicates shouldHandleExceptionPredicates, ResultPredicates`1 shouldHandleResultPredicates, ICircuitController`1 breakerController)
+   at Polly.CircuitBreaker.AsyncCircuitBreakerPolicy.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy.ExecuteAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+2021-10-23 10:59:10.401 +03:00 [INF] requestId: 0HMCLVBVCRENG:00000001, previousRequestId: no previous request id, message: /product-service/api/product/list is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-23 10:59:11.444 +03:00 [INF] requestId: 0HMCLVBVCRENG:00000001, previousRequestId: no previous request id, message: Client has been authenticated for /product-service/api/product/list
+2021-10-23 10:59:11.451 +03:00 [INF] requestId: 0HMCLVBVCRENG:00000001, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-23 10:59:11.452 +03:00 [INF] requestId: 0HMCLVBVCRENG:00000001, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+2021-10-23 10:59:11.452 +03:00 [INF] requestId: 0HMCLVBVCRENG:00000001, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-23 10:59:12.194 +03:00 [INF] requestId: 0HMCLVBVCRENG:00000001, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5002/api/product/list
+2021-10-23 10:59:12.245 +03:00 [INF] HTTP GET /product-service/api/product/list responded 200 in 2115.2611 ms. RequestId: 8a2cf672-698e-4304-af1e-d5cddc7c59d4 Request Body http localhost:5000/product-service/api/product/list   and Response 200: [{"productId":1,"name":"Product-1"},{"productId":2,"name":"Product-2"}]. Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-23 10:59:13.861 +03:00 [INF] requestId: 0HMCLVBVCRENG:00000002, previousRequestId: no previous request id, message: /product-service/api/product/list is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+2021-10-23 10:59:13.874 +03:00 [INF] requestId: 0HMCLVBVCRENG:00000002, previousRequestId: no previous request id, message: Client has been authenticated for /product-service/api/product/list
+2021-10-23 10:59:13.874 +03:00 [INF] requestId: 0HMCLVBVCRENG:00000002, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+2021-10-23 10:59:13.874 +03:00 [INF] requestId: 0HMCLVBVCRENG:00000002, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+2021-10-23 10:59:13.874 +03:00 [INF] requestId: 0HMCLVBVCRENG:00000002, previousRequestId: no previous request id, message: /api/{catchAll} route does not require user to be authorised
+2021-10-23 10:59:13.992 +03:00 [INF] requestId: 0HMCLVBVCRENG:00000002, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5002/api/product/list
+2021-10-23 10:59:14.039 +03:00 [INF] HTTP GET /product-service/api/product/list responded 200 in 182.0801 ms. RequestId: 17dc66d7-cf67-47ec-84de-4424b5040497 Request Body http localhost:5000/product-service/api/product/list   and Response 200: [{"productId":1,"name":"Product-1"},{"productId":2,"name":"Product-2"}]. Client Ip Addres is : ::1 Host machine is :CGumrukcuoglu
+2021-10-23 10:59:14.655 +03:00 [INF] requestId: 0HMCLVBVCRENG:00000003, previousRequestId: no previous request id, message: Request get:/product-service/api/product/list from ClientId client has been blocked, quota 1/1s exceeded by 2. Blocked by rule /product-service/api/{catchAll}, TraceIdentifier 0HMCLVBVHGAF0.
+2021-10-23 10:59:14.658 +03:00 [WRN] requestId: 0HMCLVBVCRENG:00000003, previousRequestId: no previous request id, message: Error Code: QuotaExceededError Message: API calls quota exceeded! maximum admitted 1 per 1s. errors found in ResponderMiddleware. Setting error response for request path:/product-service/api/product/list, request method: GET
+2021-10-23 10:59:14.726 +03:00 [WRN] HTTP GET /product-service/api/product/list responded 429 in 10.3261 ms. RequestId: d28a53c3-cc96-423c-a4dd-ca199a01e37f Request Body http localhost:5000/product-service/api/product/list   and Response 429: API calls quota exceeded! maximum admitted 1 per 1s.. Client Ip Addres is : ::1 Host machi
